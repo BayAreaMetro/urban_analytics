@@ -1,0 +1,3530 @@
+Description: Revision of (TEST SMALL )
+Samples selected:
+      2008-2012, ACS 5-year sample
+            Note: 
+            Density of the full data file:  5.0%
+            Density of your extract: 0.5%
+
+File Type:                    rectangular
+Case Selection:               Yes
+  Variable               Columns        Len    2012   
+  YEAR               H   1-4            4      X 
+  MULTYEAR           H   5-8            4      X 
+  DATANUM            H   9-10           2      X 
+  SERIAL             H  11-18           8      X 
+  NUMPREC            H  19-20           2      X 
+  HHWT               H  21-30          10      X 
+  HHTYPE             H  31              1      X 
+  REPWT              H  32              1      X 
+  CPI99              H  33-37           5      X 
+  STATEFIP           H  38-39           2      X 
+  PUMA               H  40-44           5      X 
+  GQ                 H  45              1      X 
+  FARM               H  46              1      X 
+  OWNERSHP           H  47              1      X 
+  OWNERSHPD          H  48-49           2      X 
+  MORTGAGE           H  50              1      X 
+  MORTGAG2           H  51              1      X 
+  MORTAMT1           H  52-56           5      X 
+  MORTAMT2           H  57-60           4      X 
+  PROPINSR           H  61-64           4      X 
+  PROPTX99           H  65-66           2      X 
+  OWNCOST            H  67-71           5      X 
+  RENT               H  72-75           4      X 
+  RENTGRS            H  76-79           4      X 
+  RENTMEAL           H  80              1      X 
+  CONDOFEE           H  81-84           4      X 
+  MOBLHOME           H  85-89           5      X 
+  COSTELEC           H  90-93           4      X 
+  COSTGAS            H  94-97           4      X 
+  COSTWATR           H  98-101          4      X 
+  COSTFUEL           H 102-105          4      X 
+  HHINCOME           H 106-112          7      X 
+  VALUEH             H 113-119          7      X 
+  KITCHEN            H 120              1      X 
+  ROOMS              H 121-122          2      X 
+  BUILTYR2           H 123-124          2      X 
+  UNITSSTR           H 125-126          2      X 
+  BEDROOMS           H 127-128          2      X 
+  VEHICLES           H 129              1      X 
+  NFAMS              H 130-131          2      X 
+  MULTGEN            H 132              1      X 
+  MULTGEND           H 133-134          2      X 
+  REPWT1             H 135-140          6      X 
+  REPWT2             H 141-146          6      X 
+  REPWT3             H 147-152          6      X 
+  REPWT4             H 153-158          6      X 
+  REPWT5             H 159-164          6      X 
+  REPWT6             H 165-170          6      X 
+  REPWT7             H 171-176          6      X 
+  REPWT8             H 177-182          6      X 
+  REPWT9             H 183-188          6      X 
+  REPWT10            H 189-194          6      X 
+  REPWT11            H 195-200          6      X 
+  REPWT12            H 201-206          6      X 
+  REPWT13            H 207-212          6      X 
+  REPWT14            H 213-218          6      X 
+  REPWT15            H 219-224          6      X 
+  REPWT16            H 225-230          6      X 
+  REPWT17            H 231-236          6      X 
+  REPWT18            H 237-242          6      X 
+  REPWT19            H 243-248          6      X 
+  REPWT20            H 249-254          6      X 
+  REPWT21            H 255-260          6      X 
+  REPWT22            H 261-266          6      X 
+  REPWT23            H 267-272          6      X 
+  REPWT24            H 273-278          6      X 
+  REPWT25            H 279-284          6      X 
+  REPWT26            H 285-290          6      X 
+  REPWT27            H 291-296          6      X 
+  REPWT28            H 297-302          6      X 
+  REPWT29            H 303-308          6      X 
+  REPWT30            H 309-314          6      X 
+  REPWT31            H 315-320          6      X 
+  REPWT32            H 321-326          6      X 
+  REPWT33            H 327-332          6      X 
+  REPWT34            H 333-338          6      X 
+  REPWT35            H 339-344          6      X 
+  REPWT36            H 345-350          6      X 
+  REPWT37            H 351-356          6      X 
+  REPWT38            H 357-362          6      X 
+  REPWT39            H 363-368          6      X 
+  REPWT40            H 369-374          6      X 
+  REPWT41            H 375-380          6      X 
+  REPWT42            H 381-386          6      X 
+  REPWT43            H 387-392          6      X 
+  REPWT44            H 393-398          6      X 
+  REPWT45            H 399-404          6      X 
+  REPWT46            H 405-410          6      X 
+  REPWT47            H 411-416          6      X 
+  REPWT48            H 417-422          6      X 
+  REPWT49            H 423-428          6      X 
+  REPWT50            H 429-434          6      X 
+  REPWT51            H 435-440          6      X 
+  REPWT52            H 441-446          6      X 
+  REPWT53            H 447-452          6      X 
+  REPWT54            H 453-458          6      X 
+  REPWT55            H 459-464          6      X 
+  REPWT56            H 465-470          6      X 
+  REPWT57            H 471-476          6      X 
+  REPWT58            H 477-482          6      X 
+  REPWT59            H 483-488          6      X 
+  REPWT60            H 489-494          6      X 
+  REPWT61            H 495-500          6      X 
+  REPWT62            H 501-506          6      X 
+  REPWT63            H 507-512          6      X 
+  REPWT64            H 513-518          6      X 
+  REPWT65            H 519-524          6      X 
+  REPWT66            H 525-530          6      X 
+  REPWT67            H 531-536          6      X 
+  REPWT68            H 537-542          6      X 
+  REPWT69            H 543-548          6      X 
+  REPWT70            H 549-554          6      X 
+  REPWT71            H 555-560          6      X 
+  REPWT72            H 561-566          6      X 
+  REPWT73            H 567-572          6      X 
+  REPWT74            H 573-578          6      X 
+  REPWT75            H 579-584          6      X 
+  REPWT76            H 585-590          6      X 
+  REPWT77            H 591-596          6      X 
+  REPWT78            H 597-602          6      X 
+  REPWT79            H 603-608          6      X 
+  REPWT80            H 609-614          6      X 
+  PERNUM             P 615-618          4      X 
+  PERWT              P 619-628         10      X 
+  SLWT               P 629-638         10      X 
+  REPWTP             P 639              1      X 
+  NCHILD             P 640              1      X 
+  RELATE             P 641-642          2      X 
+  RELATED            P 643-646          4      X 
+  SEX                P 647              1      X 
+  AGE                P 648-650          3      X 
+  MARST              P 651              1      X 
+  RACE               P 652              1      X 
+  RACED              P 653-655          3      X 
+  HISPAN             P 656              1      X 
+  HISPAND            P 657-659          3      X 
+  ANCESTR1           P 660-662          3      X 
+  ANCESTR1D          P 663-666          4      X 
+  CITIZEN            P 667              1      X 
+  YRSUSA2            P 668              1      X 
+  LANGUAGE           P 669-670          2      X 
+  LANGUAGED          P 671-674          4      X 
+  EDUC               P 675-676          2      X 
+  EDUCD              P 677-679          3      X 
+  SCHLTYPE           P 680              1      X 
+  EMPSTAT            P 681              1      X 
+  EMPSTATD           P 682-683          2      X 
+  LABFORCE           P 684              1      X 
+  OCC                P 685-688          4      X 
+  IND                P 689-692          4      X 
+  OCCSOC             P 693-698          6      X 
+  INDNAICS           P 699-706          8      X 
+  INCTOT             P 707-713          7      X 
+  INCWAGE            P 714-719          6      X 
+  INCBUS00           P 720-725          6      X 
+  INCSS              P 726-730          5      X 
+  INCWELFR           P 731-735          5      X 
+  INCINVST           P 736-741          6      X 
+  INCRETIR           P 742-747          6      X 
+  INCSUPP            P 748-752          5      X 
+  INCOTHER           P 753-757          5      X 
+  INCEARN            P 758-764          7      X 
+  POVERTY            P 765-767          3      X 
+  MIGRATE1           P 768              1      X 
+  MIGRATE1D          P 769-770          2      X 
+  MIGPLAC1           P 771-773          3      X 
+  MIGPUMA1           P 774-778          5      X 
+  MOVEDIN            P 779              1      X 
+  DIFFPHYS           P 780              1      X 
+  PWSTATE2           P 781-782          2      X 
+  PWPUMA00           P 783-787          5      X 
+  TRANWORK           P 788-789          2      X 
+  REPWTP1            P 790-795          6      X 
+  REPWTP2            P 796-801          6      X 
+  REPWTP3            P 802-807          6      X 
+  REPWTP4            P 808-813          6      X 
+  REPWTP5            P 814-819          6      X 
+  REPWTP6            P 820-825          6      X 
+  REPWTP7            P 826-831          6      X 
+  REPWTP8            P 832-837          6      X 
+  REPWTP9            P 838-843          6      X 
+  REPWTP10           P 844-849          6      X 
+  REPWTP11           P 850-855          6      X 
+  REPWTP12           P 856-861          6      X 
+  REPWTP13           P 862-867          6      X 
+  REPWTP14           P 868-873          6      X 
+  REPWTP15           P 874-879          6      X 
+  REPWTP16           P 880-885          6      X 
+  REPWTP17           P 886-891          6      X 
+  REPWTP18           P 892-897          6      X 
+  REPWTP19           P 898-903          6      X 
+  REPWTP20           P 904-909          6      X 
+  REPWTP21           P 910-915          6      X 
+  REPWTP22           P 916-921          6      X 
+  REPWTP23           P 922-927          6      X 
+  REPWTP24           P 928-933          6      X 
+  REPWTP25           P 934-939          6      X 
+  REPWTP26           P 940-945          6      X 
+  REPWTP27           P 946-951          6      X 
+  REPWTP28           P 952-957          6      X 
+  REPWTP29           P 958-963          6      X 
+  REPWTP30           P 964-969          6      X 
+  REPWTP31           P 970-975          6      X 
+  REPWTP32           P 976-981          6      X 
+  REPWTP33           P 982-987          6      X 
+  REPWTP34           P 988-993          6      X 
+  REPWTP35           P 994-999          6      X 
+  REPWTP36           P 1000-1005        6      X 
+  REPWTP37           P 1006-1011        6      X 
+  REPWTP38           P 1012-1017        6      X 
+  REPWTP39           P 1018-1023        6      X 
+  REPWTP40           P 1024-1029        6      X 
+  REPWTP41           P 1030-1035        6      X 
+  REPWTP42           P 1036-1041        6      X 
+  REPWTP43           P 1042-1047        6      X 
+  REPWTP44           P 1048-1053        6      X 
+  REPWTP45           P 1054-1059        6      X 
+  REPWTP46           P 1060-1065        6      X 
+  REPWTP47           P 1066-1071        6      X 
+  REPWTP48           P 1072-1077        6      X 
+  REPWTP49           P 1078-1083        6      X 
+  REPWTP50           P 1084-1089        6      X 
+  REPWTP51           P 1090-1095        6      X 
+  REPWTP52           P 1096-1101        6      X 
+  REPWTP53           P 1102-1107        6      X 
+  REPWTP54           P 1108-1113        6      X 
+  REPWTP55           P 1114-1119        6      X 
+  REPWTP56           P 1120-1125        6      X 
+  REPWTP57           P 1126-1131        6      X 
+  REPWTP58           P 1132-1137        6      X 
+  REPWTP59           P 1138-1143        6      X 
+  REPWTP60           P 1144-1149        6      X 
+  REPWTP61           P 1150-1155        6      X 
+  REPWTP62           P 1156-1161        6      X 
+  REPWTP63           P 1162-1167        6      X 
+  REPWTP64           P 1168-1173        6      X 
+  REPWTP65           P 1174-1179        6      X 
+  REPWTP66           P 1180-1185        6      X 
+  REPWTP67           P 1186-1191        6      X 
+  REPWTP68           P 1192-1197        6      X 
+  REPWTP69           P 1198-1203        6      X 
+  REPWTP70           P 1204-1209        6      X 
+  REPWTP71           P 1210-1215        6      X 
+  REPWTP72           P 1216-1221        6      X 
+  REPWTP73           P 1222-1227        6      X 
+  REPWTP74           P 1228-1233        6      X 
+  REPWTP75           P 1234-1239        6      X 
+  REPWTP76           P 1240-1245        6      X 
+  REPWTP77           P 1246-1251        6      X 
+  REPWTP78           P 1252-1257        6      X 
+  REPWTP79           P 1258-1263        6      X 
+  REPWTP80           P 1264-1269        6      X 
+
+Variable Availability Key:
+All Years X - available in this sample
+All Years . - not available in this sample
+
+Case Selections:
+H STATEFIP      06 California
+
+ YEAR		Census year
+1850		1850
+1860		1860
+1870		1870
+1880		1880
+1900		1900
+1910		1910
+1920		1920
+1930		1930
+1940		1940
+1950		1950
+1960		1960
+1970		1970
+1980		1980
+1990		1990
+2000		2000
+2001		2001
+2002		2002
+2003		2003
+2004		2004
+2005		2005
+2006		2006
+2007		2007
+2008		2008
+2009		2009
+2010		2010
+2011		2011
+2012		2012
+2013		2013
+
+ NUMPREC		Number of person records following
+00		Vacant household
+01		1 person record
+02		2
+03		3
+04		4
+05		5
+06		6
+07		7
+08		8
+09		9
+10		10
+11		11
+12		12
+13		13
+14		14
+15		15
+16		16
+17		17
+18		18
+19		19
+20		20
+21		21
+22		22
+23		23
+24		24
+25		25
+26		26
+27		27
+28		28
+29		29
+30		30
+
+ HHTYPE		Household Type
+0		N/A
+		Family Households:
+1		Married-couple family household
+2		Male householder, no wife present
+3		Female householder, no husband present
+		Nonfamily Households:
+4		Male householder, living alone
+5		Male householder, not living alone
+6		Female householder, living alone
+7		Female householder, not living alone
+9		HHTYPE could not be determined
+
+ STATEFIP		State (FIPS code)
+01		Alabama
+02		Alaska
+04		Arizona
+05		Arkansas
+06		California
+08		Colorado
+09		Connecticut
+10		Delaware
+11		District of Columbia
+12		Florida
+13		Georgia
+15		Hawaii
+16		Idaho
+17		Illinois
+18		Indiana
+19		Iowa
+20		Kansas
+21		Kentucky
+22		Louisiana
+23		Maine
+24		Maryland
+25		Massachusetts
+26		Michigan
+27		Minnesota
+28		Mississippi
+29		Missouri
+30		Montana
+31		Nebraska
+32		Nevada
+33		New Hampshire
+34		New Jersey
+35		New Mexico
+36		New York
+37		North Carolina
+38		North Dakota
+39		Ohio
+40		Oklahoma
+41		Oregon
+42		Pennsylvania
+44		Rhode Island
+45		South Carolina
+46		South Dakota
+47		Tennessee
+48		Texas
+49		Utah
+50		Vermont
+51		Virginia
+53		Washington
+54		West Virginia
+55		Wisconsin
+56		Wyoming
+		State groups (1980 Urban/rural sample):
+61		Maine-New Hampshire-Vermont
+62		Massachusetts-Rhode Island
+63		Minnesota-Iowa-Missouri-Kansas-Nebraska-S.Dakota-N.Dakota
+64		Maryland-Delaware
+65		Montana-Idaho-Wyoming
+66		Utah-Nevada
+67		Arizona-New Mexico
+68		Alaska-Hawaii
+72		Puerto Rico
+97		Military/Mil. Reservation
+99		State not identified
+
+ GQ		Group quarters status
+0		Vacant unit
+		Households:
+1		Households under 1970 definition
+2		Additional households under 1990 definition
+		Group Quarters:
+3		Group quarters--Institutions
+4		Other group quarters
+5		Additional households under 2000 definition
+6		Fragment
+
+ FARM		Farm status
+0		N/A
+1		Non-Farm
+2		Farm
+
+ OWNERSHP		Ownership of dwelling (tenure) [general version]
+0		N/A
+1		Owned or being bought (loan)
+2		Rented
+
+ OWNERSHPD		Ownership of dwelling (tenure) [detailed version]
+00		N/A
+10		Owned or being bought
+11		Check mark (owns?)
+12		Owned free and clear
+13		Owned with mortgage or loan
+20		Rented
+21		No cash rent
+22		With cash rent
+
+ MORTGAGE		Mortgage status
+0		N/A
+1		No, owned free and clear
+2		Check mark on manuscript (probably yes)
+3		Yes, mortgaged/ deed of trust or similar debt
+4		Yes, contract to purchase
+
+ MORTGAG2		Second mortgage status
+0		N/A 
+1		No
+2		Yes
+3		Yes, 2nd mortgage
+4		Yes, home equity loan
+5		Yes, 2nd mortgage and home equity loan
+
+ PROPTX99		Annual property taxes, 1990
+00		N/A (GQ/vacant/not owned  or being bought/not a one-family h
+01		None
+02		$1-49  ($2-49 in 1990 PR Samples)
+03		$ 50 - 99
+04		$ 100 - 149
+05		$ 150 - 199
+06		$ 200 - 249
+07		$ 250 - 299
+08		$ 300 - 349
+09		$ 350 - 399
+10		$ 400 - 449
+11		$ 450 - 499
+12		$ 500 - 549
+13		$ 550 - 599
+14		$ 600 - 649
+15		$ 650 - 699
+16		$ 700 - 749
+17		$ 750 - 799
+18		$ 800 - 849
+19		$ 850 - 899
+20		$ 900 - 949
+21		$ 950 - 999
+22		$ 1,000 - 1,099
+23		$ 1,100 - 1,199
+24		$ 1,200 - 1,299
+25		$ 1,300 - 1,399
+26		$ 1,400 - 1,499
+27		$ 1,500 - 1,599
+28		$ 1,600 - 1,699
+29		$ 1,700 - 1,799
+30		$ 1,800 - 1,899
+31		$ 1,900 - 1,999
+32		$ 2,000 - 2,099
+33		$2100-2199  ($2199+ 1990 PR Samples)
+34		$ 2,200 - 2,299
+35		$ 2,300 - 2,399
+36		$ 2,400 - 2,499
+37		$ 2,500 - 2,599
+38		$ 2,600 - 2,699
+39		$ 2,700 - 2,799
+40		$ 2,800 - 2,899
+41		$ 2,900 - 2,999
+42		$ 3,000 - 3,099
+43		$ 3,100 - 3,199
+44		$ 3,200 - 3,299
+45		$ 3,300 - 3,399
+46		$ 3,400 - 3,499
+47		$ 3,500 - 3,599
+48		$ 3,600 - 3,699
+49		$ 3,700 - 3,799
+50		$ 3,800 - 3,899
+51		$ 3,900 - 3,999
+52		$ 4,000 - 4,099
+53		$ 4,100 - 4,199
+54		$ 4,200 - 4,299
+55		$ 4,300 - 4,399
+56		$ 4,400 - 4,499
+57		$4500 (1990 U.S. Samples)
+58		$4500-4599 ($4501+ 1990 U.S. Samples)
+59		$4600 - 4699
+60		$4700 - 4799
+61		$4800 - 4899
+62		$4900 - 4999
+63		$5000 - 5499
+64		$5500 - 5999
+65		$6000 - 6999
+66		$7000 - 7999
+67		$8000-8999 ($8000-9099 in 2000)
+68		$9000-9999 ($9100+ in 2000)
+69		$10,000+
+
+ RENTMEAL		Meals included in rent
+0		N/A
+1		No, meals not included
+2		Yes
+
+ KITCHEN		Kitchen or cooking facilities
+0		N/A
+1		No
+2		No, or shared use
+3		Yes, shared use
+4		Yes (shared or exclusive use)
+5		Yes, exclusive use
+
+ ROOMS		Number of rooms
+00		N/A
+01		1 room
+02		2
+03		3
+04		4
+05		5
+06		6
+07		7
+08		8
+09		9 (9+, 1960-2007)
+10		10
+11		11
+12		12
+13		13
+14		14
+15		15
+16		16
+17		17
+18		18
+19		19
+20		20
+21		21
+22		22
+23		23
+24		24
+25		25
+26		26
+27		27
+
+ BUILTYR2		Age of structure, decade
+00		N/A
+01		1939 or earlier
+02		1940-1949
+03		1950-1959
+04		1960-1969
+05		1970-1979
+06		1980-1989
+07		1990-1994 (1990-1999 in the 2005-2013 ACS and the PRCS)
+08		1995-1999 (1995-1998 in the 2000-2002 ACS)
+09		2000-2004 (1999-2002 in the 2000-2002 ACS)
+10		2005 (2005 or later in the 2005-2007 and 2006-2013 ACS/PRCS)
+11		2006
+12		2007
+13		2008
+14		2009
+15		2010
+16		2011
+17		2012
+18		2013
+
+ UNITSSTR		Units in structure
+00		N/A
+01		Mobile home or trailer
+02		Boat, tent, van, other
+03		1-family house, detached
+04		1-family house, attached
+05		2-family building
+06		3-4 family building
+07		5-9 family building
+08		10-19 family building
+09		20-49 family building
+10		50+ family building
+
+ BEDROOMS		Number of bedrooms
+00		N/A
+01		No bedrooms
+02		1
+03		2
+04		3
+05		4 (4+ in 1960)
+06		5+ (1970-2000, ACS, PRCS)
+07		6
+08		7
+09		8
+10		9
+11		10
+12		11
+13		12
+14		13
+15		14
+16		15
+17		16
+18		17
+19		18
+20		19
+21		20
+22		21
+
+ VEHICLES		Vehicles available
+0		N/A
+1		1 available
+2		2
+3		3
+4		4
+5		5
+6		6 (6+, 2000, ACS and PRCS)
+7		7+
+9		No vehicles available
+
+ NFAMS		Number of families in household
+00		0 families (vacant unit)
+01		1 family or N/A
+02		2 families
+03		3
+04		4
+05		5
+06		6
+07		7
+08		8
+09		9
+10		10
+11		11
+12		12
+13		13
+14		14
+15		15
+16		16
+17		17
+18		18
+19		19
+20		20
+21		21
+22		22
+23		23
+24		24
+25		25
+26		26
+27		27
+28		28
+29		29
+30		30
+
+ MULTGEN		Multigenerational household [general version]
+0		N/A
+1		1 generation
+2		2 generations
+3		3+ generations
+
+ MULTGEND		Multigenerational household [detailed version]
+00		N/A
+10		1 generation
+21		2 adjacent generations, adult-children
+22		2 adjacent generations, adult-adult
+23		2 nonadjacent generations
+31		3+ generations (Census 2008 definition)
+32		3+ generations (Additional IPUMS definition)
+
+ NCHILD		Number of own children in the household
+0		0 children present
+1		1 child present
+2		2
+3		3
+4		4
+5		5
+6		6
+7		7
+8		8
+9		9+
+
+ RELATE		Relationship to household head [general version]
+		RELATIVES
+01		Head/Householder
+02		Spouse
+03		Child
+04		Child-in-law
+05		Parent
+06		Parent-in-Law
+07		Sibling
+08		Sibling-in-Law
+09		Grandchild
+10		Other relatives
+		NON-RELATIVES
+11		Partner, friend, visitor
+12		Other non-relatives
+13		Institutional inmates
+
+ RELATED		Relationship to household head [detailed version]
+		RELATIVES
+0101		Head/Householder
+0201		Spouse
+0202		2nd/3rd Wife (Polygamous)
+0301		Child
+0302		Adopted Child
+0303		Stepchild
+0304		Adopted, n.s.
+0401		Child-in-law
+0402		Step Child-in-law
+0501		Parent
+0502		Stepparent
+0601		Parent-in-Law
+0602		Stepparent-in-law
+0701		Sibling
+0702		Step/Half/Adopted Sibling
+0801		Sibling-in-Law
+0802		Step/Half Sibling-in-law
+0901		Grandchild
+0902		Adopted Grandchild
+0903		Step Grandchild
+0904		Grandchild-in-law
+1000		Other Relatives:
+1001		Other Relatives
+1011		Grandparent
+1012		Step Grandparent
+1013		Grandparent-in-law
+1021		Aunt or Uncle
+1022		Aunt,Uncle-in-law
+1031		Nephew, Niece
+1032		Neph/Niece-in-law
+1033		Step/Adopted Nephew/Niece
+1034		Grand Niece/Nephew
+1041		Cousin
+1042		Cousin-in-law
+1051		Great Grandchild
+1061		Other relatives, nec
+		NON-RELATIVES
+1100		Partner, Friend, Visitor
+1110		Partner/friend
+1111		Friend
+1112		Partner
+1113		Partner/roommate
+1114		Unmarried Partner
+1115		Housemate/Roomate
+1120		Relative of partner
+1130		Concubine/Mistress
+1131		Visitor
+1132		Companion and family of companion
+1139		Allocated partner/friend/visitor
+		Pre-1940 system:
+1200		Other non-relatives
+1201		Roomers/boarders/lodgers
+1202		Boarders
+1203		Lodgers
+1204		Roomer
+1205		Tenant
+1206		Foster child
+1210		Employees:
+1211		Servant
+1212		Housekeeper
+1213		Maid
+1214		Cook
+1215		Nurse
+1216		Other probable domestic employee
+1217		Other employee
+1219		Relative of employee
+1221		Military
+1222		Students
+1223		Members of religious orders
+1230		Other non-relatives
+1239		Allocated other non-relative
+		1940-2000 System:
+		Household members:
+1240		Roomers/boarders/lodgers and foster children
+1241		Roomers/boarders/lodgers
+1242		Foster children
+1250		Employees
+1251		Domestic employees
+1252		Non-domestic employees
+1253		Relative of employee
+1260		Other non-relatives (1990 includes employees)
+		Group quarters members:
+1270		Non-inmate 1990
+1281		Head of group quarters
+1282		Employees of group quarters
+1283		Relative of head, staff, or employee group quarters
+1284		Other non-inmate 1940-1959
+1291		Military
+1292		College dormitories
+1293		Residents of rooming houses
+1294		Other non-inmate 1980 (includes employees and non-inmates in
+1295		Other non-inmates 1960-1970 (includes employees)
+1296		Non-inmates in institutions
+1301		Institutional inmates
+9996		Unclassifiable
+9997		Unknown
+9998		Illegible
+9999		Missing
+
+ SEX		Sex
+1		Male
+2		Female
+
+ AGE		Age
+000		Less than 1 year old
+001		1
+002		2
+003		3
+004		4
+005		5
+006		6
+007		7
+008		8
+009		9
+010		10
+011		11
+012		12
+013		13
+014		14
+015		15
+016		16
+017		17
+018		18
+019		19
+020		20
+021		21
+022		22
+023		23
+024		24
+025		25
+026		26
+027		27
+028		28
+029		29
+030		30
+031		31
+032		32
+033		33
+034		34
+035		35
+036		36
+037		37
+038		38
+039		39
+040		40
+041		41
+042		42
+043		43
+044		44
+045		45
+046		46
+047		47
+048		48
+049		49
+050		50
+051		51
+052		52
+053		53
+054		54
+055		55
+056		56
+057		57
+058		58
+059		59
+060		60
+061		61
+062		62
+063		63
+064		64
+065		65
+066		66
+067		67
+068		68
+069		69
+070		70
+071		71
+072		72
+073		73
+074		74
+075		75
+076		76
+077		77
+078		78
+079		79
+080		80
+081		81
+082		82
+083		83
+084		84
+085		85
+086		86
+087		87
+088		88
+089		89
+090		90 (90+ in 1980 and 1990)
+091		91
+092		92
+093		93
+094		94
+095		95
+096		96
+097		97
+098		98
+099		99
+100		100 (100+ in 1960-1970)
+101		101
+102		102
+103		103
+104		104
+105		105
+106		106
+107		107
+108		108
+109		109
+110		110
+111		111
+112		112 (112+ in the 1980 internal data)
+113		113
+114		114
+115		115 (115+ in the 1990 internal data)
+116		116
+117		117
+118		118
+119		119
+120		120
+121		121
+122		122
+123		123
+124		124
+125		125
+126		126
+129		129
+130		130
+135		135
+
+ MARST		Marital status
+1		Married, spouse present
+2		Married, spouse absent
+3		Separated
+4		Divorced
+5		Widowed
+6		Never married/single
+
+ RACE		Race [general version]
+1		White
+2		Black/Negro
+3		American Indian or Alaska Native
+4		Chinese
+5		Japanese
+6		Other Asian or Pacific Islander
+7		Other race, nec
+8		Two major races
+9		Three or more major races
+
+ RACED		Race [detailed version]
+		ONE MAJOR RACE GROUP
+100		White
+110		Spanish write_in
+120		Blank (white) (1850)
+130		Portuguese
+140		Mexican (1930)
+150		Puerto Rican (1910 Hawaii)
+200		Black/Negro
+210		Mulatto
+300		American Indian/Alaska Native
+		American Indian:
+302		Apache
+303		Blackfoot
+304		Cherokee
+305		Cheyenne
+306		Chickasaw
+307		Chippewa
+308		Choctaw
+309		Comanche
+310		Creek
+311		Crow
+312		Iroquois
+313		Kiowa
+314		Lumbee
+315		Navajo
+316		Osage
+317		Paiute
+318		Pima
+319		Potawatomi
+320		Pueblo
+321		Seminole
+322		Shoshone
+323		Sioux
+324		Tlingit (Tlingit_Haida, 2000/ACS)
+325		Tohono O Odham
+326		All other tribes (1990)
+328		Hopi
+350		Delaware
+351		Latin American Indian
+352		Puget Sound Salish
+353		Yakama
+354		Yaqui
+355		Colville
+356		Houma
+357		Menominee
+358		Yuman
+359		South American Indian
+360		Mexican American Indian
+361		Other Amer. Indian tribe (2000,ACS)
+362		2+ Amer. Indian tribes (2000,ACS)
+		Alaskan Native:
+370		Alaskan Athabaskan
+371		Aleut
+372		Eskimo
+373		Alaskan mixed
+374		Inupiat
+375		Yup'ik
+379		Other Alaska Native tribe(s) (2000,ACS)
+398		Both Am. Ind. and Alaska Native (2000,ACS)
+399		Tribe not specified
+		Asian or Pacific Islander:
+400		Chinese
+410		Taiwanese
+420		Chinese and Taiwanese
+500		Japanese
+600		Filipino
+610		Asian Indian (Hindu 1920_1940)
+620		Korean
+630		Hawaiian
+631		Hawaiian and Asian (1900,1920)
+632		Hawaiian and European (1900,1920)
+634		Hawaiian mixed
+640		Vietnamese
+641		   Bhutanese
+642		   Mongolian 
+643		   Nepalese
+650		Other Asian or Pacific Islander (1920,1980)
+651		Asian only (CPS)
+652		Pacific Islander only (CPS)
+653		Asian or Pacific Islander, n.s. (1990 Internal Census files)
+660		Cambodian
+661		Hmong
+662		Laotian
+663		Thai
+664		Bangladeshi
+665		Burmese
+666		Indonesian
+667		Malaysian
+668		Okinawan
+669		Pakistani
+670		Sri Lankan
+671		Other Asian, n.e.c.
+672		Asian, not specified
+		Two or more Asian races
+673		Chinese and Japanese
+674		Chinese and Filipino
+675		Chinese and Vietnamese
+676		Chinese and Asian write_in
+677		Japanese and Filipino
+678		Asian Indian and Asian write_in
+679		Other Asian race combinations
+		Polynesian region (also includes Hawaii):
+680		Samoan
+681		Tahitian
+682		Tongan
+683		Other Polynesian (1990)
+684		1+ other Polynesian races (2000,ACS)
+		Micronesian region:
+685		Guamanian/Chamorro
+686		Northern Mariana Islander
+687		Palauan
+688		Other Micronesian (1990)
+689		1+ other Micronesian races (2000,ACS)
+		Melanesian region:
+690		Fijian
+691		Other Melanesian (1990)
+692		1+ other Melanesian races (2000,ACS)
+		Pacific Islanders from two or more PI regions:
+698		2+ PI races from 2+ PI regions
+699		Pacific Islander, n.s.
+700		Other race, n.e.c.
+		Two major race groups:
+801		White and Black
+802		White and AIAN
+810		White and Asian
+811		White and Chinese
+812		White and Japanese
+813		White and Filipino
+814		White and Asian Indian
+815		White and Korean
+816		White and Vietnamese
+817		White and Asian write_in
+818		White and other Asian race(s)
+819		White and two or more Asian groups
+820		White and PI  
+821		White and Native Hawaiian
+822		White and Samoan
+823		White and Guamanian
+824		White and PI write_in
+825		White and other PI race(s)
+826		White and other race write_in
+827		White and other race, n.e.c.
+830		Black and AIAN
+831		Black and Asian
+832		Black and Chinese
+833		Black and Japanese
+834		Black and Filipino
+835		Black and Asian Indian
+836		Black and Korean
+837		Black and Asian write_in
+838		Black and other Asian race(s)
+840		Black and PI
+841		Black and PI write_in
+842		Black and other PI race(s)
+845		Black and other race write_in
+850		AIAN and Asian
+851		AIAN and Filipino (2000 1%)
+852		AIAN and Asian Indian
+853		AIAN and Asian write_in (2000 1%)
+854		AIAN and other Asian race(s)
+855		AIAN and PI
+856		AIAN and other race write_in
+860		Asian and PI
+861		Chinese and Hawaiian
+862		Chinese, Filipino, Hawaiian (2000 1%)
+863		Japanese and Hawaiian (2000 1%)
+864		Filipino and Hawaiian
+865		Filipino and PI write_in
+866		Asian Indian and PI write_in (2000 1%)
+867		Asian write_in and PI write_in
+868		Other Asian race(s) and PI race(s)
+869		Japanese and Korean (ACS)
+880		Asian and other race write_in
+881		Chinese and other race write_in
+882		Japanese and other race write_in
+883		Filipino and other race write_in
+884		Asian Indian and other race write_in
+885		Asian write_in and other race write_in
+886		Other Asian race(s) and other race write_in
+887		      Chinese and Korean
+890		PI and other race write_in: 
+891		PI write_in and other race write_in
+892		Other PI race(s) and other race write_in
+893		         Native Hawaiian or PI other race(s)
+899		API and other race write_in
+		Three major race groups:
+901		White, Black, AIAN
+902		White, Black, Asian
+903		White, Black, PI
+904		White, Black, other race write_in
+905		White, AIAN, Asian
+906		White, AIAN, PI
+907		White, AIAN, other race write_in
+910		White, Asian, PI 
+911		White, Chinese, Hawaiian
+912		White, Chinese, Filipino, Hawaiian (2000 1%)
+913		White, Japanese, Hawaiian (2000 1%)
+914		White, Filipino, Hawaiian
+915		Other White, Asian race(s), PI race(s)
+916		      White, AIAN and Filipino
+917		      White, Black, and Filipino
+920		White, Asian, other race write_in
+921		White, Filipino, other race write_in (2000 1%)
+922		White, Asian write_in, other race write_in (2000 1%)
+923		Other White, Asian race(s), other race write_in (2000 1%)
+925		White, PI, other race write_in
+926		White, Chinese, Filipino
+930		Black, AIAN, Asian
+931		Black, AIAN, PI
+932		Black, AIAN, other race write_in
+933		Black, Asian, PI
+934		Black, Asian, other race write_in
+935		Black, PI, other race write_in
+940		AIAN, Asian, PI
+941		AIAN, Asian, other race write_in
+942		AIAN, PI, other race write_in
+943		Asian, PI, other race write_in
+944		Asian (Chinese, Japanese, Korean, Vietnamese); and Native Hawaiian or PI; and Other
+949		2 or 3 races (CPS)
+		Four major race groups:
+950		White, Black, AIAN, Asian
+951		White, Black, AIAN, PI
+952		White, Black, AIAN, other race write_in
+953		White, Black, Asian, PI
+954		White, Black, Asian, other race write_in
+955		White, Black, PI, other race write_in
+960		White, AIAN, Asian, PI
+961		White, AIAN, Asian, other race write_in
+962		White, AIAN, PI, other race write_in
+963		White, Asian, PI, other race write_in
+964		White, Chinese, Japanese, Native Hawaiian
+970		Black, AIAN, Asian, PI
+971		Black, AIAN, Asian, other race write_in
+972		Black, AIAN, PI, other race write_in
+973		Black, Asian, PI, other race write_in
+974		AIAN, Asian, PI, other race write_in
+975		AIAN, Asian, PI, Hawaiian other race write_in
+976		Two specified Asian  (Chinese and other Asian, Chinese and Japanese, Japanese and other Asian, Korean and other Asian); Native Hawaiian/PI; and Other Race
+		Five major race groups:
+980		White, Black, AIAN, Asian, PI
+981		White, Black, AIAN, Asian, other race write_in
+982		White, Black, AIAN, PI, other race write_in
+983		White, Black, Asian, PI, other race write_in
+984		White, AIAN, Asian, PI, other race write_in
+985		Black, AIAN, Asian, PI, other race write_in
+986		Black, AIAN, Asian, PI, Hawaiian, other race write_in
+989		4 or 5 races (CPS)
+		Six major race groups:
+990		White, Black, AIAN, Asian, PI, other race write_in
+991		White race; Some other race; Black or African American race and/or American Indian and Alaska Native race and/or Asian groups and/or Native Hawaiian and Other Pacific Islander groups
+996		2+ races, n.e.c. (CPS)
+
+ HISPAN		Hispanic origin [general version]
+0		Not Hispanic
+1		Mexican
+2		Puerto Rican
+3		Cuban
+4		Other
+9		Not Reported
+
+ HISPAND		Hispanic origin [detailed version]
+000		Not Hispanic
+100		Mexican
+102		Mexican American
+103		Mexicano/Mexicana
+104		Chicano/Chicana
+105		La Raza
+106		Mexican American Indian
+107		Mexico
+200		Puerto Rican
+300		Cuban
+		Other:
+		Central American
+401		Central American Indian
+402		Canal Zone
+411		Costa Rican
+412		Guatemalan
+413		Honduran
+414		Nicaraguan
+415		Panamanian
+416		Salvadoran
+417		Central American, n.e.c.
+		South American
+420		Argentinean
+421		Bolivian
+422		Chilean
+423		Colombian
+424		Ecuadorian
+425		Paraguayan
+426		Peruvian
+427		Uruguayan
+428		Venezuelan
+429		South American Indian
+430		Criollo
+431		South American, n.e.c.
+		Spaniard
+450		Spaniard
+451		Andalusian
+452		Asturian
+453		Castillian
+454		Catalonian
+455		Balearic Islander
+456		Gallego
+457		Valencian
+458		Canarian
+459		Spanish Basque
+460		Dominican
+465		Latin American
+470		Hispanic
+480		Spanish
+490		Californio
+491		Tejano
+492		Nuevo Mexicano
+493		Spanish American
+494		Spanish American Indian
+495		Meso American Indian
+496		Mestizo
+498		Other, n.s. 
+499		Other, n.e.c.
+900		Not Reported
+
+ ANCESTR1		Ancestry, first response [general version]
+		WESTERN EUROPE (EXCEPT SPAIN)
+001		Alsatian, Alsace-Lorraine
+002		Andorran
+003		Austrian
+004		Tirolean
+		Basque:
+005		Basque
+006		French Basque
+008		Belgian
+009		Flemish
+010		Walloon
+011		British
+012		British Isles
+013		Channel Islander
+014		Gibraltan
+015		Cornish
+016		Corsican
+017		Cypriot
+018		Greek Cypriote
+019		Turkish Cypriote
+020		Danish
+021		Dutch
+022		English
+023		Faeroe Islander
+024		Finnish
+025		Karelian
+		French:
+026		French
+027		Lorrainian
+028		Breton
+029		Frisian
+030		Friulian
+		German:
+032		German
+033		Bavarian
+034		Berliner
+035		Hamburger
+036		Hanoverian
+037		Hessian
+038		Lubecker
+039		Pomeranian
+040		Prussian
+041		Saxon
+042		Sudetenlander
+043		Westphalian
+046		Greek
+047		Cretan
+048		Cycladic Islander
+049		Icelander
+050		Irish
+		Italian:
+051		Italian
+053		Abruzzi
+054		Apulian
+055		Basilicata
+056		Calabrian
+057		Amalfin
+058		Emilia Romagna
+059		Rome
+060		Ligurian
+061		Lombardian
+062		Marches
+063		Molise
+064		Neapolitan
+065		Piedmontese
+066		Puglia
+067		Sardinian
+068		Sicilian
+069		Tuscan
+070		Trentino
+071		Umbrian
+072		Valle dAosta
+073		Venetian
+075		Lapp
+076		Liechtensteiner
+077		Luxemburger
+078		Maltese
+079		Manx
+080		Monegasque
+081		Northern Irelander
+082		Norwegian
+084		Portuguese
+085		Azorean
+086		Madeiran
+087		Scotch Irish
+088		Scottish
+089		Swedish
+090		Aland Islander
+091		Swiss
+092		Suisse
+095		Romansch
+096		Suisse Romane
+097		Welsh
+098		Scandinavian, Nordic
+		EASTERN EUROPE AND SOVIET UNION
+100		Albanian
+101		Azerbaijani
+102		Belourussian
+103		Bulgarian
+105		Carpathian
+		Cossack:
+108		Cossack
+109		Croatian
+111		Czechoslovakian
+112		Bohemian
+115		Estonian
+116		Livonian
+117		Finno Ugrian
+118		Mordovian
+119		Voytak
+120		Georgian
+122		Germans from Russia
+123		Gruziia
+124		Rom
+125		Hungarian
+126		Magyar
+128		Latvian
+129		Lithuanian
+130		Macedonian
+132		North Caucasian
+133		North Caucasian Turkic
+140		Ossetian
+142		Polish
+143		Kashubian
+		Romanian:
+144		Romanian
+145		Bessarabian
+146		Moldavian
+147		Wallachian
+148		Russian
+150		Muscovite
+		Serbian:
+152		Serbian
+153		Slovak
+154		Slovene
+155		Sorb/Wend
+156		Soviet Turkic
+157		Bashkir
+158		Chevash
+159		Gagauz
+160		Mesknetian
+163		Yakut
+164		Soviet Union, nec
+165		Tatar
+169		Uzbek
+171		Ukrainian
+176		Yugoslavian
+178		Slav
+179		Slavonian
+		EUROPE, N.E.C.
+181		Central European, nec
+183		Northern European, nec
+185		Southern European, nec
+187		Western European, nec
+190		Eastern European, nec
+195		European, nec
+		HISPANIC CATEGORIES
+		Spaniard:
+200		Spaniard
+201		Andalusian
+202		Astorian
+204		Catalonian
+205		Balearic Islander
+206		Galician
+		Mexican:
+210		Mexican
+211		Mexican American
+213		Chicano/Chicana
+218		Nuevo Mexicano
+219		Californio
+221		Costa Rican
+222		Guatemalan
+223		Honduran
+224		Nicaraguan
+225		Panamanian
+226		Salvadoran
+227		Latin American
+231		Argentinean
+232		Bolivian
+233		Chilean
+234		Colombian
+235		Ecuadorian
+236		Paraguayan
+237		Peruvian
+238		Uruguayan
+239		Venezuelan
+248		South American
+261		Puerto Rican
+271		Cuban
+275		Dominican
+290		Hispanic
+291		Spanish
+295		Spanish American
+296		Other Spanish/Hispanic
+		WEST INDIES
+300		Bahamian
+301		Barbadian
+302		Belizean
+303		Bermudan
+304		Cayman Islander
+308		Jamaican
+310		Dutch West Indies
+311		Aruba Islander
+312		St Maarten Islander
+314		Trinidadian/Tobagonian
+315		Trinidadian
+316		Tobagonian
+317		U.S. Virgin Islander
+321		British Virgin Islander
+322		British West Indian
+323		Turks and Caicos Islander
+324		Anguilla Islander
+328		Dominica Islander
+329		Grenadian
+331		St Lucia Islander
+332		French West Indies
+333		Guadeloupe Islander
+334		Cayenne
+335		West Indian
+336		Haitian
+337		Other West Indian
+		NON-HISPANIC CENTRAL AND SOUTH AMERICA
+360		Brazilian
+365		San Andres
+370		Guyanese/British Guiana
+375		Providencia
+380		Surinam/Dutch Guiana
+		NORTH AFRICA AND SOUTHWEST ASIA
+400		Algerian
+402		Egyptian
+404		Libyan
+		Moroccan:
+406		Moroccan
+407		Ifni
+408		Tunisian
+411		North African
+412		Alhucemas
+413		Berber
+414		Rio de Oro
+415		Bahraini
+416		Iranian
+417		Iraqi
+419		Israeli
+421		Jordanian
+423		Kuwaiti
+425		Lebanese
+427		Saudi Arabian
+		Syrian:
+429		Syrian
+431		Armenian
+434		Turkish
+435		Yemeni
+436		Omani
+437		Muscat
+438		Trucial Oman
+439		Qatar
+442		Kurdish
+444		Kuria Muria Islander
+465		Palestinian
+466		Gazan
+467		West Bank
+470		South Yemeni
+471		Aden
+480		United Arab Emirates
+482		Assyrian/Chaldean/Syriac
+490		Middle Eastern
+495		Arab
+496		Other Arab
+		SUBSAHARAN AFRICA
+500		Angolan
+502		Benin
+504		Botswana
+506		Burundian
+508		Cameroonian
+510		Cape Verdean
+513		Chadian
+515		Congolese
+516		Congo-Brazzaville
+519		Djibouti
+520		Equatorial Guinea
+522		Ethiopian
+523		Eritrean
+525		Gabonese
+527		Gambian
+529		Ghanian
+530		Guinean
+531		Guinea Bissau
+532		Ivory Coast
+534		Kenyan
+538		Lesotho
+541		Liberian
+543		Madagascan
+545		Malawian
+546		Malian
+549		Mozambican
+550		Namibian
+551		Niger
+553		Nigerian
+554		Fulani
+555		Hausa
+556		Ibo
+557		Tiv
+561		Rwandan
+564		Senegalese
+566		Sierra Leonean
+568		Somalian
+569		Swaziland
+570		South African
+571		Union of South Africa
+572		Afrikaner
+573		Natalian
+574		Zulu
+576		Sudanese
+577		Dinka
+578		Nuer
+579		Fur
+582		Tanzanian
+583		Tanganyikan
+584		Zanzibar Islande
+586		Togo
+588		Ugandan
+589		Upper Voltan
+591		Zairian
+592		Zambian
+593		Zimbabwean
+594		African Islands
+		SUBSAHARAN AFRICA, N.E.C.
+595		Other Subsaharan Africa
+596		Central African
+597		East African
+598		West African
+599		African
+		SOUTH ASIA
+600		Afghan
+601		Baluchi
+602		Pathan
+603		Bengali
+607		Bhutanese
+609		Nepali
+		Asian Indian:
+615		Asian Indian
+622		Andaman Islander
+624		Andhra Pradesh
+626		Assamese
+628		Goanese
+630		Gujarati
+632		Karnatakan
+634		Keralan
+638		Maharashtran
+640		Madrasi
+642		Mysore
+644		Naga
+648		Pondicherry
+650		Punjabi
+656		Tamil
+675		East Indies
+680		Pakistani
+690		Sri Lankan
+691		Singhalese
+692		Veddah
+695		Maldivian
+		OTHER ASIA
+		Burmese:
+700		Burmese
+702		Shan
+703		Cambodian
+704		Khmer
+		Chinese:
+706		Chinese
+707		Cantonese
+708		Manchurian
+709		Mandarin
+712		Mongolian
+714		Tibetan
+716		Hong Kong
+718		Macao
+720		Filipino
+730		Indonesian
+		Japanese:
+740		Japanese
+746		Ryukyu Islander
+748		Okinawan
+750		Korean
+765		Laotian
+766		Meo
+768		Hmong
+770		Malaysian
+774		Singaporean
+776		Thai
+777		Black Thai
+778		Western Lao
+782		Taiwanese
+785		Vietnamese
+786		Katu
+787		Ma
+788		Mnong
+790		Montagnard
+792		Indochinese
+793		Eurasian
+795		Asian
+796		Other Asian
+		PACIFIC
+800		Australian
+801		Tasmanian
+802		Australian Aborigine
+803		New Zealander
+		Polynesian:
+808		Polynesian
+810		Maori
+811		Hawaiian
+813		Part Hawaiian
+		Samoan:
+814		Samoan
+815		Tongan
+816		Tokelauan
+817		Cook Islander
+818		Tahitian
+819		Niuean
+		Micronesia:
+820		Micronesian
+821		Guamanian
+822		Chamorro Islander
+823		Saipanese
+824		Palauan
+825		Marshall Islander
+		Federated States of Micronesia:
+826		Kosraean
+827		Ponapean
+828		Chuukese
+829		Yap Islander
+830		Caroline Islander
+831		Kiribatese
+832		Nauruan
+833		Tarawa Islander
+834		Tinian Islander
+		Melanesian:
+840		Melanesian Islander
+841		Fijian
+843		New Guinean
+844		Papuan
+845		Solomon Islander
+846		New Caledonian Islander
+847		Vanuatuan
+850		Pacific Islander
+860		Oceania
+862		Chamolinian
+863		Reserved Codes
+870		Other Pacific
+		NORTH AMERICAN (NON-HISPANIC)
+900		Afro-American
+902		African-American
+913		Central American Indian
+914		South American Indian
+920		American Indian  (all tribes)
+921		Aleut
+922		Eskimo
+923		Inuit
+924		White/Caucasian
+930		Greenlander
+931		Canadian
+933		Newfoundland
+934		Nova Scotian
+935		French Canadian
+936		Acadian
+939		American
+940		United States
+941		Alabama
+942		Alaska
+943		Arizona
+944		Arkansas
+945		California
+946		Colorado
+947		Connecticut
+948		District of Columbia
+949		Delaware
+950		Florida
+951		Georgia
+952		Idaho
+953		Illinois
+954		Indiana
+955		Iowa
+956		Kansas
+957		Kentucky
+958		Louisiana
+959		Maine
+960		Maryland
+961		Massachusetts
+962		Michigan
+963		Minnesota
+964		Mississippi
+965		Missouri
+966		Montana
+967		Nebraska
+968		Nevada
+969		New Hampshire
+970		New Jersey
+971		New Mexico
+972		New York
+973		North Carolina
+974		North Dakota
+975		Ohio
+976		Oklahoma
+977		Oregon
+978		Pennsylvania
+979		Rhode Island
+980		South Carolina
+981		South Dakota
+982		Tennessee
+983		Texas
+984		Utah
+985		Vermont
+986		Virginia
+987		Washington
+988		West Virginia
+989		Wisconsin
+990		Wyoming
+993		Southerner
+994		North American
+		RESIDUAL
+995		Mixture
+996		Uncodable
+998		Other
+999		Not Reported
+
+ ANCESTR1D		Ancestry, first response [detailed version]
+		WESTERN EUROPE (EXCEPT SPAIN)
+0010		Alsatian
+0020		Andorran
+0030		Austrian
+0040		Tirolean
+		Basque:
+0051		Basque (1980)
+0052		Spanish Basque (1980)
+0053		Basque (1990-2000,ACS)
+0054		Spanish Basque (1990-2000, 2001-2004 ACS)
+0060		French Basque
+0080		Belgian
+0090		Flemish
+0100		Walloon
+0110		British
+0120		British Isles
+0130		Channel Islander
+0140		Gibraltan
+0150		Cornish
+0160		Corsican
+0170		Cypriot
+0180		Greek Cypriote
+0190		Turkish Cypriote
+0200		Danish
+0210		Dutch
+0211		Dutch-French-Irish
+0212		Dutch-German-Irish
+0213		Dutch-Irish-Scotch
+0220		English
+0221		English-French-German
+0222		English-French-Irish
+0223		English-German-Irish
+0224		English-German-Swedish
+0225		English-Irish-Scotch
+0226		English-Scotch-Welsh
+0230		Faeroe Islander
+0240		Finnish
+0250		Karelian
+		French:
+0260		French (1980)
+0261		French (1990-2000,ACS, PRCS)
+0262		Occitan (1990-2000)
+0270		Lorrainian
+0280		Breton
+0290		Frisian
+0300		Friulian
+		German:
+0320		German (1980)
+0321		German (1990-2000, ACS, PRCS)
+0322		Pennsylvania German (1990-2000, ACS, PRCS)
+0323		East German (1990-2000)
+0324		West German (1990-2000)
+0325		German-French-Irish
+0326		German-Irish-Italian
+0327		German-Irish-Scotch
+0328		German-Irish-Swedish
+0329		Germanic
+0330		Bavarian
+0340		Berliner
+0350		Hamburger
+0360		Hanoverian
+0370		Hessian
+0380		Lubecker
+0390		Pomeranian (1980)
+0391		Pomeranian (1990-2000)
+0392		Silesian (1990-2000)
+0400		Prussian
+0410		Saxon
+0420		Sudetenlander
+0430		Westphalian
+0460		Greek
+0470		Cretan
+0480		Cycladic Islander, Dodecanese Islander, Peloponnesian
+0490		Icelander
+0500		Irish, various subheads,
+0501		Celtic
+0502		Irish Scotch
+		Italian:
+0510		Italian (1980)
+0511		Italian (1990-2000, ACS, PRCS)
+0512		Trieste (1990-2000)
+0513		San Marino (1990-2000)
+0530		Abruzzi
+0540		Apulian
+0550		Basilicata, Lucanian
+0560		Calabrian
+0570		Amalfin
+0580		Emilia Romagna
+0590		Rome
+0600		Ligurian
+0610		Lombardian
+0620		Marches
+0630		Molise
+0640		Neapolitan
+0650		Piedmontese
+0660		Puglia
+0670		Sardinian
+0680		Sicilian
+0690		Tuscan
+0700		Trentino
+0710		Umbrian
+0720		Valle dAosta
+0730		Venetian
+0750		Lapp
+0760		Liechtensteiner
+0770		Luxemburger
+0780		Maltese
+0790		Manx
+0800		Monegasque
+0810		Northern Irelander
+0820		Norwegian
+0840		Portuguese
+0850		Azorean
+0860		Madeiran
+0870		Scotch Irish
+0880		Scottish
+0890		Swedish
+0900		Aland Islander
+0910		Swiss
+0920		Suisse (1980)
+0921		Suisse (1990-2000)
+0922		Switzer (1990-2000)
+0950		Romansch (1980)
+0951		Romansch (1990-2000)
+0952		Ladin (1990-2000)
+0960		Suisse Romane (1990-2000)
+0961		Suisse Romane (1980)
+0962		Ticino
+0970		Welsh
+0980		Scandinavian, Nordic
+		EASTERN EUROPE AND SOVIET UNION
+1000		Albanian
+1010		Azerbaijani
+1020		Belourussian
+1030		Bulgarian
+1050		Carpathian
+1051		Carpatho Rusyn
+1052		Rusyn
+		Cossack:
+1080		Cossack (1990-2000)
+1081		Cossack (1980)
+1082		Turkestani (1990-2000, 2012 ACS)
+1083		Kirghiz (1980)
+1084		Turcoman (1980)
+1090		Croatian
+1110		Czechoslovakian
+1111		Czech
+1120		Bohemian (1980)
+1121		Bohemian (1990-2000, ACS, PRCS)
+1122		Moravian (1990-2000)
+1150		Estonian
+1160		Livonian
+1170		Finno Ugrian (1990-2000)
+1171		Udmert
+1180		Mordovian
+1190		Voytak
+1200		Georgian
+1220		Germans from Russia
+1221		Volga
+1222		German from Russia (1990-2000); German Russian (ACS)
+1230		Gruziia (1990-2000)
+1240		Rom
+1250		Hungarian
+1260		Magyar
+1280		Latvian
+1290		Lithuanian
+1300		Macedonian
+1320		North Caucasian
+1330		North Caucasian Turkic (1990-2000)
+1400		Ossetian
+1420		Polish
+1430		Kashubian
+		Romanian:
+1440		Romanian (1990-2000, ACS, PRCS)
+1441		Romanian (1980)
+1442		Transylvanian
+1450		Bessarabian (1980)
+1451		Bessarabian (1990-2000)
+1452		Bucovina
+1460		Moldavian
+1470		Wallachian
+1480		Russian
+1500		Muscovite
+		Serbian:
+1520		Serbian (1980)
+1521		Serbian (1990-2000, ACS, PRCS)
+1522		Bosnian (1990), Herzegovinian (2000, ACS, PRCS) 
+1523		Montenegrin (1990-2000, 2012 ACS)
+1530		Slovak
+1540		Slovene
+1550		Sorb/Wend
+1560		Soviet Turkic (1990-2000)
+1570		Bashkir
+1580		Chevash
+1590		Gagauz (1990-2000)
+1600		Mesknetian (1990-2000)
+1630		Yakut
+1640		Soviet Union, nec
+1650		Tatar (1990-2000)
+1651		Tatar (1980)
+1652		Crimean (1980)
+1653		Tuvinian (1990-2000)
+1654		Soviet Central Asian (1990-2000)
+1655		Tadzhik (1980, 2000)
+1690		Uzbek
+1710		Ukrainian (1980)
+1711		Ukrainian (1990-2000, ACS, PRCS)
+1712		Ruthenian (1980)
+1713		Ruthenian (1990-2000)
+1714		Lemko
+1715		Bioko
+1716		Hesel
+1717		Windish
+1760		Yugoslavian
+1780		Slav
+1790		Slavonian
+		EUROPE, N.E.C.
+1810		Central European, nec
+1830		Northern European, nec
+1850		Southern European, nec
+1870		Western European, nec
+1900		Eastern European, nec
+1950		European, nec
+		HISPANIC CATEGORIES
+		Spaniard:
+2000		Spaniard (1980)
+2001		Spaniard (1990-2000, ACS, PRCS)
+2002		Castillan (1990-2000)
+2003		Velencian (1990-2000)
+2010		Andalusian (1990-2000)
+2020		Asturian (1990-2000)
+2040		Catalonian
+2050		Balearic Islander (1980)
+2051		Balearic Islander (1990-2000)
+2052		Canary Islander (1990-2000)
+2060		Galician (1980)
+2061		Gallego (1990-2000)
+2062		Galician (1990-2000)
+		Mexican:
+2100		Mexican
+2101		Mexican (1990-2000, ACS, PRCS)
+2102		Mexicano/Mexicana (1990-2000, ACS, PRCS)
+2103		Mexican Indian
+2110		Mexican American
+2111		Mexican American Indian
+2130		Chicano/Chicana
+2180		Nuevo Mexicano
+2181		Nuevo Mexicano (1990-2000)
+2182		La Raza (1990-2000)
+2183		Mexican state (1990-2000, ACS, PRCS)
+2184		Tejano/Tejana (1990-2000)
+2190		Californio
+2210		Costa Rican
+2220		Guatemalan
+2230		Honduran
+2240		Nicaraguan
+2250		Panamanian (1980)
+2251		Panamanian (1990-2000, ACS, PRCS)
+2252		Canal Zone (1990-2000)
+2260		Salvadoran
+2270		Latin American (1980)
+2271		Central American (1990-2000, ACS, PRCS)
+2272		Latin American (1990-2000, ACS, PRCS)
+2273		Latino/Latina (1990-2000, ACS, PRCS)
+2274		Latin (1990-2000, ACS, PRCS)
+2310		Argentinean
+2320		Bolivian
+2330		Chilean
+2340		Colombian
+2350		Ecuadorian
+2360		Paraguayan
+2370		Peruvian
+2380		Uruguayan
+2390		Venezuelan
+2480		South American (1980)
+2481		South American (1990-2000, ACS, PRCS)
+2482		Criollo/Criolla (1990-2000)
+2610		Puerto Rican
+2710		Cuban
+2750		Dominican
+2900		Hispanic
+2910		Spanish
+2950		Spanish American
+2960		Other Spanish/Hispanic
+		WEST INDIES
+3000		Bahamian
+3010		Barbadian
+3020		Belizean
+3030		Bermudan
+3040		Cayman Islander
+3080		Jamaican
+3100		Dutch West Indies
+3110		Aruba Islander
+3120		St Maarten Islander
+3140		Trinidadian/Tobagonian
+3150		Trinidadian
+3160		Tobagonian
+3170		U.S. Virgin Islander (1980)
+3171		U.S. Virgin Islander (1990-2000)
+3172		St. Croix Islander (1990-2000)
+3173		St. John Islander (1990-2000)
+3174		St. Thomas Islander (1990-2000)
+3210		British Virgin Islander (1980)
+3211		British Virgin Islander (1990-2000)
+3212		Antigua (1990-2000, ACS, PRCS)
+3220		British West Indian
+3230		Turks and Caicos Islander
+3240		Anguilla Islander (1980)
+3241		Anguilla Islander (1990-2000)
+3242		Montserrat Islander (1990-2000)
+3243		Kitts/Nevis Islander (1990-2000)
+3244		St. Christopher (1980)
+3245		St Vincent Islander (1990); Vincent-Grenadine Islander (2000 Census, 2005 ACS, 2005 PRCS)
+3280		Dominica Islander
+3290		Grenadian
+3310		St Lucia Islander
+3320		French West Indian
+3330		Guadeloupe Islander
+3340		Cayenne
+3350		West Indian (1990-2000, ACS, PRCS)
+3351		West Indian (1980)
+3352		Caribbean (1980)
+3353		Arawak (1980)
+3360		Haitian
+3370		Other West Indian
+		NON-HISPANIC CENTRAL AND SOUTH AMERICA
+3600		Brazilian
+3650		San Andres
+3700		Guyanese/British Guiana
+3750		Providencia
+3800		Surinam/Dutch Guiana
+		NORTH AFRICA AND SOUTHWEST ASIA
+4000		Algerian
+4020		Egyptian
+4040		Libyan
+		Moroccan:
+4060		Moroccan (1990-2000, ACS, PRCS)
+4061		Moroccan (1980)
+4062		Moor (1980)
+4070		Ifni
+4080		Tunisian
+4110		North African
+4120		Alhucemas
+4130		Berber
+4140		Rio de Oro
+4150		Bahraini
+4160		Iranian
+4170		Iraqi
+4190		Israeli
+4210		Jordanian
+4220		Transjordan
+4230		Kuwaiti
+4250		Lebanese
+4270		Saudi Arabian
+		Syrian:
+4290		Syrian (1990-2000, ACS, PRCS)
+4291		Syrian (1980)
+4292		Latakian (1980)
+4293		Jebel Druse (1980)
+4310		Armenian
+4340		Turkish
+4350		Yemeni
+4360		Omani
+4370		Muscat
+4380		Trucial Oman
+4390		Qatar
+4410		Bedouin
+4420		Kurdish
+4440		Kuria Muria Islander
+4650		Palestinian
+4660		Gazan
+4670		West Bank
+4700		South Yemeni
+4710		Aden
+4800		United Arab Emirates
+4820		Assyrian/Chaldean/Syriac (1990-2000)
+4821		Assyrian 
+4822		Syriac (1980, 2000)
+4823		Chaldean (2000, ACS, PRCS)
+4900		Middle Eastern
+4950		Arab
+4951		Arabic (1990-2000, ACS, PRCS)
+4960		Other Arab
+		SUBSAHARAN AFRICA
+5000		Angolan
+5020		Benin
+5040		Botswana
+5060		Burundian
+5080		Cameroonian
+5100		Cape Verdean
+5120		Central African Republic
+5130		Chadian
+5150		Congolese
+5160		Congo-Brazzaville
+5190		Djibouti
+5200		Equatorial Guinea
+5210		Corsico Islander
+5220		Ethiopian
+5230		Eritrean
+5250		Gabonese
+5270		Gambian
+5290		Ghanian
+5300		Guinean
+5310		Guinea Bissau
+5320		Ivory Coast
+5340		Kenyan
+5380		Lesotho
+5410		Liberian
+5430		Madagascan
+5450		Malawian
+5460		Malian
+5470		Mauritanian
+5490		Mozambican
+5500		Namibian
+5510		Niger
+5530		Nigerian
+5540		Fulani
+5550		Hausa
+5560		Ibo
+5570		Tiv (1980)
+5571		Tiv (1990-2000)
+5572		Yoruba (1990-2000)
+5610		Rwandan
+5640		Senegalese
+5660		Sierra Leonean
+5680		Somalian
+5690		Swaziland
+5700		South African
+5710		Union of South Africa
+5720		Afrikaner
+5730		Natalian
+5740		Zulu
+5760		Sudanese
+5770		Dinka
+5780		Nuer
+5790		Fur
+5800		Baggara
+5820		Tanzanian
+5830		Tanganyikan
+5840		Zanzibar
+5860		Togo
+5880		Ugandan
+5890		Upper Voltan
+5900		Voltan
+5910		Zairian
+5920		Zambian
+5930		Zimbabwean
+5940		African Islands (1980)
+5941		African Islands (1990-2000)
+5942		Mauritius (1990-2000)
+		SUBSAHARAN AFRICA, N.E.C.
+5950		Other Subsaharan Africa
+5960		Central African, Middle Congo
+5970		East African
+5980		West African
+5990		African
+		SOUTH ASIA
+6000		Afghan
+6010		Baluchi
+6020		Pathan
+6030		Bengali (1980)
+6031		Bangladeshi (1990-2000, ACS, PRCS)
+6032		Bengali (1990-2000, ACS, PRCS)
+6070		Bhutanese
+6090		Nepali
+		Asian Indian:
+6150		Asian Indian (1980)
+6151		India (1990-2000, ACS, PRCS)
+6152		East Indian (1990-2000, ACS, PRCS)
+6153		Madya Pradesh (1990-2000)
+6154		Orissa (1990-2000)
+6155		Rajasthani (1990-2000)
+6156		Sikkim (1990-2000)
+6157		Uttar Pradesh (1990-2000)
+6220		Andaman Islander
+6240		Andhra Pradesh
+6260		Assamese
+6280		Goanese
+6300		Gujarati
+6320		Karnatakan
+6340		Keralan
+6380		Maharashtran
+6400		Madrasi
+6420		Mysore
+6440		Naga
+6480		Pondicherry
+6500		Punjabi
+6560		Tamil
+6750		East Indies (1990-2000)
+6800		Pakistani (1980)
+6801		Pakistani (1990-2000, ACS, PRCS)
+6802		Kashmiri (1990-2000)
+6900		Sri Lankan
+6910		Singhalese
+6920		Veddah
+6950		Maldivian
+		OTHER ASIA
+		Burmese:
+7000		Burmese (1990-2000, ACS, PRCS)
+7001		Burmese (1980)
+7002		Burman (1980)
+7020		Shan
+7030		Cambodian
+7040		Khmer
+		Chinese:
+7060		Chinese
+7070		Cantonese (1980)
+7071		Cantonese (1990-2000, ACS, PRCS)
+7072		Formosan (1990-2000)
+7080		Manchurian
+7090		Mandarin (1990-2000)
+7120		Mongolian (1980)
+7121		Mongolian (1990-2000, ACS, PRCS)
+7122		Kalmyk (1990-2000)
+7140		Tibetan
+7160		Hong Kong (1990-2000)
+7161		Hong Kong (1980)
+7162		Eastern Archipelgo (1980)
+7180		Macao
+7200		Filipino
+7300		Indonesian (1980)
+7301		Indonesian (1990-2000, ACS, PRCS)
+7302		Borneo (1990-2000)
+7303		Java (1990-2000)
+7304		Sumatran (1990-2000)
+		Japanese:
+7400		Japanese (1980)
+7401		Japanese (1990-2000, ACS, PRCS)
+7402		Issei (1990-2000)
+7403		Nisei (1990-2000)
+7404		Sansei (1990-2000)
+7405		Yonsei (1990-2000)
+7406		Gosei (1990-2000)
+7460		Ryukyu Islander
+7480		Okinawan
+7500		Korean
+7650		Laotian
+7660		Meo
+7680		Hmong
+7700		Malaysian (1980)
+7701		Malaysian (1990-2000, ACS, PRCS)
+7702		North Borneo (1990-2000)
+7740		Singaporean
+7760		Thai
+7770		Black Thai
+7780		Western Lao
+7820		Taiwanese
+7850		Vietnamese, Annamese
+7860		Katu
+7870		Ma
+7880		Mnong
+7900		Montagnard
+7920		Indochinese
+7930		Eurasian
+7931		Amerasian (1990-2000, ACS, PRCS)
+7950		Asian
+7960		Other Asian
+		PACIFIC
+8000		Australian
+8010		Tasmanian
+8020		Australian Aborigine (1990-2000)
+8030		New Zealander
+		Polynesian:
+8080		Polynesian (1990-2000, ACS, PRCS)
+8081		Polynesian (1980)
+8082		Norfolk Islander (1980)
+8090		Kapinagamarangan (1990-2000)
+8091		Kapinagamarangan (1980)
+8092		Nukuoroan (1980)
+8100		Maori
+8110		Hawaiian
+8130		Part Hawaiian
+		Samoan:
+8140		Samoan (1990-2000, ACS, PRCS)
+8141		Samoan (1980)
+8142		American Samoan (1980)
+8143		French Samoan
+8144		Part Samoan (1990-2000)
+8150		Tongan
+8160		Tokelauan
+8170		Cook Islander
+8180		Tahitian, French Polynesian, Society Islander
+8190		Niuean
+		Micronesia:
+8200		Micronesian (1990-2000, ACS, PRCS)
+8201		Micronesian (1980)
+8202		U.S. Trust Terr of the Pacific (1980)
+8210		Guamanian
+8220		Chamorro Islander
+8230		Saipanese (1990-2000)
+8231		Saipanese (1980)
+8232		Norther Marianas (1980)
+8240		Palauan
+8250		Marshall Islander
+		Federated States of Micronesia:
+8260		Kosraean
+8270		Ponapean (1990-2000)
+8271		Ponapean (1980)
+8272		Mokilese (1980)
+8273		Ngatikese (1980)
+8274		Pingelapese (1980)
+8280		Chuukese (1990-2000)
+8281		Hall Islander (1980)
+8282		Mortlockese (1980)
+8283		Namanouito (1980)
+8284		Pulawatese (1980)
+8285		Truk Islander
+8290		Yap Islander
+8300		Caroline Islander (1990-2000)
+8301		Caroline Islander (1980)
+8302		Lamotrekese (1980)
+8303		Ulithian (1980)
+8304		Woleaian (1980)
+8310		Kiribatese
+8320		Nauruan
+8330		Tarawa Islander (1990-2000)
+8340		Tinian Islander (1990-2000)
+		Melanesian:
+8400		Melanesian Islander
+8410		Fijian
+8430		New Guinean
+8440		Papuan
+8450		Solomon Islander
+8460		New Caledonian Islander
+8470		Vanuatuan
+8500		Pacific Islander (1990-2000, ACS, PRCS)
+8501		Campbell Islander (1980)
+8502		Christmas Islander (1980)
+8503		Kermadec Islander (1980)
+8504		Midway Islander (1980)
+8505		Phoenix Islander (1980)
+8506		Wake Islander (1980)
+8600		Oceania
+8620		Chamolinian (1990-2000)
+8630		Reserved Codes
+8700		Other Pacific
+		NORTH AMERICAN (NON-HISPANIC)
+9000		Afro-American
+9001		Afro-American (1990-2000, ACS, PRCS)
+9002		Black (1990-2000, ACS, PRCS)
+9003		Negro (1990-2000, ACS, PRCS)
+9004		Nonwhite (1990-2000)
+9005		Colored (1990-2000)
+9006		Creole (1990-2000, ACS, PRCS)
+9007		Mulatto (1990-2000)
+9008		Afro
+9020		African-American (1990-2000, ACS, PRCS)
+9130		Central American Indian (1990-2000, ACS, PRCS)
+9140		South Amerianc Indian (1990-2000, ACS, PRCS)
+9200		American Indian  (all tribes)
+9201		American Indian-English-French
+9202		American Indian-English-German
+9203		American Indian-English-Irish
+9204		American Indian-German-Irish
+9205		Cherokee
+9206		Native American
+9207		Indian
+9210		Aleut
+9220		Eskimo
+9230		Inuit
+9240		White/Caucasian
+9241		White/Caucasian (1990-2000, ACS, PRCS)
+9242		Anglo (1990-2000, ACS, PRCS)
+9243		Appalachian (1990-2000, ACS, PRCS)
+9244		Aryan (1990-2000)
+9300		Greenlander
+9310		Canadian
+9330		Newfoundland
+9340		Nova Scotian
+9350		French Canadian
+9360		Acadian
+9361		Acadian (1990-2000, ACS, PRCS)
+9362		Cajun (1990-2000, ACS, PRCS)
+9390		American
+9391		American/United States
+9400		United States
+9410		Alabama
+9420		Alaska
+9430		Arizona
+9440		Arkansas
+9450		California
+9460		Colorado
+9470		Connecticut
+9480		District of Columbia
+9490		Delaware
+9500		Florida
+9510		Georgia
+9520		Idaho
+9530		Illinois
+9540		Indiana
+9550		Iowa
+9560		Kansas
+9570		Kentucky
+9580		Louisiana
+9590		Maine
+9600		Maryland
+9610		Massachusetts
+9620		Michigan
+9630		Minnesota
+9640		Mississippi
+9650		Missouri
+9660		Montana
+9670		Nebraska
+9680		Nevada
+9690		New Hampshire
+9700		New Jersey
+9710		New Mexico
+9720		New York
+9730		North Carolina
+9740		North Dakota
+9750		Ohio
+9760		Oklahoma
+9770		Oregon
+9780		Pennsylvania
+9790		Rhode Island
+9800		South Carolina
+9810		South Dakota
+9820		Tennessee
+9830		Texas
+9840		Utah
+9850		Vermont
+9860		Virginia
+9870		Washington
+9880		West Virginia
+9890		Wisconsin
+9900		Wyoming
+9930		Southerner
+9940		North American
+		RESIDUAL
+9950		Mixture
+9960		Uncodable
+9961		Not Classified
+9980		Other
+9990		Not Reported
+
+ CITIZEN		Citizenship status
+0		N/A
+1		Born abroad of American parents
+2		Naturalized citizen
+3		Not a citizen
+4		Not a citizen, but has received first papers
+5		Foreign born, citizenship status not reported
+
+ YRSUSA2		Years in the United States, intervalled
+0		N/A
+1		0-5 years
+2		6-10 years
+3		11-15 years
+4		16-20 years
+5		21+ years
+9		Missing
+
+ LANGUAGE		Language spoken [general version]
+00		N/A or blank
+01		English
+02		German
+03		Yiddish, Jewish
+04		Dutch
+05		Swedish
+06		Danish
+07		Norwegian
+08		Icelandic
+10		Italian
+11		French
+12		Spanish
+13		Portuguese
+14		Rumanian
+15		Celtic
+16		Greek
+17		Albanian
+18		Russian
+19		Ukrainian, Ruthenian, Little Russian
+20		Czech
+21		Polish
+22		Slovak
+23		Serbo-Croatian, Yugoslavian, Slavonian
+24		Slovene
+25		Lithuanian
+26		Other Balto-Slavic
+27		Slavic unknown
+28		Armenian
+29		Persian, Iranian, Farssi
+30		Other Persian dialects
+31		Hindi and related
+32		Romany, Gypsy
+33		Finnish
+34		Magyar, Hungarian
+35		Uralic
+36		Turkish
+37		Other Altaic
+38		Caucasian, Georgian, Avar
+39		Basque
+40		Dravidian
+41		Kurukh
+42		Burushaski
+43		Chinese
+44		Tibetan
+45		Burmese, Lisu, Lolo
+46		Kachin
+47		Thai, Siamese, Lao
+48		Japanese
+49		Korean
+50		Vietnamese
+51		Other East/Southeast Asian
+52		Indonesian
+53		Other Malayan
+54		Filipino, Tagalog
+55		Miconesian, Polynesian
+56		Hawaiian
+57		Arabic
+58		Near East Arabic dialect
+59		Hebrew, Israeli
+60		Amharic, Ethiopian, etc.
+61		Hamitic
+63		Sub-Saharan Africa
+64		African, n.s.
+70		American Indian (all)
+71		Aleut, Eskimo
+72		Algonquian
+73		Salish, Flathead
+74		Athapascan
+75		Navajo/Navaho
+76		Penutian-Sahaptin
+77		Other Penutian
+78		Zuni
+79		Yuman
+80		Other Hokan languages
+81		Siouan languages
+82		Muskogean
+83		Keres
+84		Iroquoian
+85		Caddoan
+86		Shoshonean, Hopi
+87		Pima, Papago
+88		Yaqui and other Sonoran, nec
+89		Other Uto-Aztecan
+90		Tanoan languages
+91		Other Indian languages
+92		Mayan languages
+93		American Indian, n.s.
+94		Native
+95		No language
+96		Other or not reported
+
+ LANGUAGED		Language spoken [detailed version]
+0000		N/A or blank
+0100		English
+0110		Jamaican Creole
+0120		Krio, Pidgin Krio
+0130		Hawaiian Pidgin
+0140		Pidgin
+0150		Gullah, Geechee
+0160		Saramacca
+0200		German
+0210		Austrian
+0220		Swiss
+0230		Luxembourgian
+0240		Pennsylvania Dutch
+0300		Yiddish, Jewish
+0310		Jewish
+0320		Yiddish
+0400		Dutch
+0410		Dutch, Flemish, Belgian
+0420		Afrikaans
+0430		Frisian
+0440		Dutch, Afrikaans, Frisian
+0460		Belgian
+0470		Flemish
+0500		Swedish
+0600		Danish
+0700		Norwegian
+0800		Icelandic
+0810		Faroese
+1000		Italian
+1010		Rhaeto-Romanic, Ladin
+1030		Romansh
+1100		French
+1110		French, Walloon
+1120		Provencal
+1130		Patois
+1140		French or Haitian Creole
+1150		Cajun
+1200		Spanish
+1210		Catalonian, Valencian
+1220		Ladino, Sefaradit, Spanol
+1230		Pachuco
+1250		Mexican
+1300		Portuguese
+1310		Papia Mentae
+1400		Rumanian
+1500		Celtic
+1520		Welsh
+1530		Breton
+1540		Irish Gaelic, Gaelic
+1550		Gaelic
+1560		Irish
+1570		Scottish Gaelic
+1580		Scotch
+1590		Manx, Manx Gaelic
+1600		Greek
+1700		Albanian
+1800		Russian
+1810		Russian, Great Russian
+1820		Bielo-, White Russian
+1900		Ukrainian, Ruthenian, Little Russian
+1910		Ruthenian
+1920		Little Russian
+1930		Ukranian
+2000		Czech
+2010		Bohemian
+2020		Moravian
+2100		Polish
+2110		Kashubian, Slovincian
+2200		Slovak
+2300		Serbo-Croatian, Yugoslavian, Slavonian
+2310		Croatian
+2320		Serbian
+2331		Dalmatian
+2332		Montenegrin
+2400		Slovene
+2500		Lithuanian
+2510		Lettish
+2600		Other Balto-Slavic
+2610		Bulgarian
+2620		Lusatian, Sorbian,  Wendish
+2621		Wendish
+2630		Macedonian
+2700		Slavic unknown
+2800		Armenian
+2900		Persian, Iranian, Farssi
+2910		Persian
+		Other Persian dialects:
+3010		Pashto, Afghan
+3020		Kurdish
+3030		Balochi
+3040		Tadzhik
+3050		Ossete
+3100		Hindi and related
+3101		Hindi, Hindustani, Indic, Jaipuri, Pali, Urdu
+3102		Hindi
+3103		Urdu
+		Other Indo-Aryan:
+3111		Sanskrit
+3112		Bengali
+3113		Panjabi
+3114		Marathi
+3115		Gujarathi
+3116		Bihari
+3117		Rajasthani
+3118		Oriya
+3119		Assamese
+3120		Kashmiri
+3121		Sindhi
+3122		Maldivian
+3123		Sinhalese
+3130		Kannada
+3140		India nec
+3150		Pakistan nec
+3190		Other Indo-European languages
+3200		Romany, Gypsy
+3210		Gypsy
+3300		Finnish
+3400		Magyar, Hungarian
+3401		Magyar
+3402		Hungarian
+3500		Uralic
+3510		Estonian, Ingrian, Livonian, Vepsian,  Votic
+3520		Lapp, Inari, Kola, Lule, Pite, Ruija, Skolt, Ume
+3530		Other Uralic
+3600		Turkish
+3700		Other Altaic
+3701		Chuvash
+3702		Karakalpak
+3703		Kazakh
+3704		Kirghiz
+3705		Karachay, Tatar, Balkar, Bashkir, Kumyk
+3706		Uzbek, Uighur
+3707		Azerbaijani
+3708		Turkmen
+3709		Yakut
+3710		Mongolian
+3711		Tungus
+3800		Caucasian, Georgian, Avar
+3810		Georgian
+3900		Basque
+4000		Dravidian
+4001		Brahui
+4002		Gondi
+4003		Telugu
+4004		Malayalam
+4005		Tamil
+4010		Bhili
+4011		Nepali
+4100		Kurukh
+4110		Munda
+4200		Burashaski
+4300		Chinese
+4301		Chinese, Cantonese, Min, Yueh
+4302		Cantonese
+4303		Mandarin
+		Other Chinese
+4311		Hakka, Fukien, Kechia
+4312		Kan, Nan Chang
+4313		Hsiang, Chansa, Hunan,  Iyan
+4314		Fuchow, Min Pei
+4315		Wu
+4400		Tibetan
+4410		Miao-Yao, Mien
+4420		Miao, Hmong
+4500		Burmese, Lisu, Lolo
+4510		Karen
+4600		Kachin
+4700		Thai, Siamese, Lao
+4710		Thai
+4720		Laotian
+4800		Japanese
+4900		Korean
+5000		Vietnamese
+		Other East/Southeast Asian
+5110		Ainu
+5120		Mon-Khmer, Cambodian
+5130		Siberian, n.e.c.
+5140		Yukagir
+5150		Muong
+5200		Indonesian
+5210		Buginese
+5220		Moluccan
+5230		Achinese
+5240		Balinese
+5250		Cham
+5260		Madurese
+5270		Malay
+5280		Minangkabau
+5290		Other Asian languages
+		Other Malayan:
+5310		Formosan, Taiwanese
+5320		Javanese
+5330		Malagasy
+5340		Sundanese
+5400		Filipino, Tagalog
+5410		Bisayan
+5420		Sebuano
+5430		Pangasinan
+5440		Llocano, Hocano
+5450		Bikol
+5460		Pampangan
+5470		Gorontalo
+5480		Palau
+		Miconesian, Polynesian
+5501		Micronesian
+5502		Carolinian
+5503		Chamorro, Guamanian
+5504		Gilbertese
+5505		Kusaiean
+5506		Marshallese
+5507		Mokilese
+5508		Mortlockese
+5509		Nauruan
+5510		Ponapean
+5511		Trukese
+5512		Ulithean, Fais
+5513		Woleai-Ulithi
+5514		Yapese
+5520		Melanesian
+5521		Polynesian
+5522		Samoan
+5523		Tongan
+5524		Niuean
+5525		Tokelauan
+5526		Fijian
+5527		Marquesan
+5528		Rarotongan
+5529		Maori
+5530		Nukuoro, Kapingarangan
+5590		Other Pacific Island languages
+5600		Hawaiian
+5700		Arabic
+5720		Egyptian
+5750		Maltese
+5800		Near East Arabic dialect
+5810		Syriac, Aramaic,  Chaldean
+5820		Syrian
+5900		Hebrew, Israeli
+6000		Amharic, Ethiopian, etc.
+		Hamitic
+6110		Berber
+6120		Chadic, Hamitic, Hausa
+6130		Cushite, Beja, Somali
+		Sub-Saharan Africa:
+6300		Nilotic
+6301		Nilo-Hamitic
+6302		Nubian
+6303		Saharan
+6304		Nilo-Saharan, Fur, Songhai
+6305		Khoisan
+6306		Sudanic
+6307		Bantu (many subheads)
+6308		Swahili
+6309		Mande
+6310		Fulani
+6311		Gur
+6312		Kru
+6313		Efik, Ibibio, Tiv
+6314		Mbum, Gbaya, Sango, Zande
+6390		Other specified African languages
+6400		African, n.s.
+7000		American Indian (all)
+7100		Aleut, Eskimo
+7110		Aleut
+7120		Pacific Gulf Yupik
+7130		Eskimo
+7140		Inupik, Innuit
+7150		St Lawrence Isl. Yupik
+7160		Yupik
+7200		Algonquian
+7201		Arapaho
+7202		Atsina, Gros Ventre
+7203		Blackfoot
+7204		Cheyenne
+7205		Cree
+7206		Delaware, Lenni-Lenape
+7207		Fox, Sac
+7208		Kickapoo
+7209		Menomini
+7210		Metis, French Cree
+7211		Miami
+7212		Micmac
+7213		Ojibwa, Chippewa
+7214		Ottawa
+7215		Passamaquoddy, Malecite
+7216		Penobscot
+7217		Abnaki
+7218		Potawatomi
+7219		Shawnee
+7300		Salish, Flathead
+7301		Lower Chehalis
+7302		Upper Chehalis, Chehalis, Satsop
+7303		Clallam
+7304		Coeur dAlene, Skitsamish
+7305		Columbia, Chelan, Wenatchee
+7306		Cowlitz
+7307		Nootsack
+7308		Okanogan
+7309		Puget Sound Salish
+7310		Quinault, Queets
+7311		Tillamook
+7312		Twana
+7313		Kalispel
+7314		Spokane
+7400		Athapascan
+7401		Ahtena
+7402		Han
+7403		Ingalit
+7404		Koyukon
+7405		Kuchin
+7406		Upper Kuskokwim
+7407		Tanaina
+7408		Tanana, Minto
+7409		Tanacross
+7410		Upper Tanana, Nabesena, Tetlin
+7411		Tutchone
+7412		Chasta Costa, Chetco, Coquille, Smith, River Athapascan
+7413		Hupa
+7420		Apache
+7421		Jicarilla, Lipan
+7422		Chiricahua, Mescalero
+7423		San Carlos, Cibecue, White Mountain
+7424		Kiowa-Apache
+7430		Kiowa
+7440		Eyak
+7450		Other Athapascan-Eyak, Cahto, Mattole, Wailaki
+7490		Other Algonquin languages
+7500		Navajo/Navaho
+		Penutian-Sahaptin
+7610		Klamath, Modoc
+7620		Nez Perce
+7630		Sahaptian, Celilo, Klikitat, Palouse, Tenino, Umatilla, Warm
+		Other Penutian:
+7700		Mountain Maidu, Maidu
+7701		Northwest Maidu, Concow
+7702		Southern Maidu, Nisenan
+7703		Coast Miwok, Bodega, Marin
+7704		Plains Mowak
+7705		Sierra Miwok, Miwok
+7706		Nomlaki, Tehama
+7707		Patwin, Colouse, Suisun
+7708		Wintun
+7709		Foothill North Yokuts
+7710		Tachi
+7711		Santiam, Calapooya, Waputa
+7712		Siuslaw, Coos, Lower Umpqua
+7713		Tsimshian
+7714		Upper Chinook, Clackamas, Multnomah, Wasco, Wishram
+7715		Chinook Jargon
+7800		Zuni
+		Hokan languages:
+7900		Yuman
+7910		Upriver Yuman
+7920		Cocomaricopa
+7930		Mohave
+7940		Diegueno
+7950		Delta River Yuman
+7960		Upland Yuman
+7970		Havasupai
+7980		Walapai
+7990		Yavapai
+8000		Achumawi
+8010		Atsugewi
+8020		Karok
+8030		Pomo
+8040		Shastan
+8050		Washo
+8060		Chumash
+		Siouan languages:
+8101		Crow, Absaroke
+8102		Hidatsa
+8103		Mandan
+8104		Dakota, Lakota, Nakota, Sioux
+8105		Chiwere
+8106		Winnebago
+8107		Kansa, Kaw
+8108		Omaha
+8109		Osage
+8110		Ponca
+8111		Quapaw, Arkansas
+8210		Alabama
+8220		Choctaw, Chickasaw
+8230		Mikasuki
+8240		Hichita, Apalachicola
+8250		Koasati
+8260		Muskogee, Creek, Seminole
+8300		Keres
+8400		Iroquoian
+8410		Mohawk
+8420		Oneida
+8430		Onandaga
+8440		Cayuga
+8450		Seneca
+8460		Tuscarora
+8470		Wyando, Huran
+8480		Cherokee
+8500		Caddoan
+8510		Arikara
+8520		Pawnee
+8530		Wichita
+		Uto-Aztecan languages:
+		Shoshonean/Hopi:
+8601		Comanche
+8602		Mono, Owens Valley Paiute
+8603		Paiute
+8604		Northern Paiute, Bannock, Num, Snake
+8605		Southern Paiute
+8606		Chemehuevi
+8607		Kawaiisu
+8608		Ute
+8609		Shoshoni
+8610		Panamint
+8620		Hopi
+8630		Cahuilla
+8631		Cupeno
+8632		Luiseno
+8633		Serrano
+8640		Tubatulabal
+		Sonoran languages:
+8700		Pima, Papago
+8800		Yaqui
+8810		Sonoran n.e.c., Cahita, Guassave, Huichole, Nayit, Tarahumar
+		Other Uto-Aztecan:
+8910		Aztecan, Mexicano, Nahua
+		Tanoan languages:
+9010		Picuris, Northern Tiwa, Taos
+9020		Tiwa, Isleta
+9030		Sandia
+9040		Tewa, Hano, Hopi-Tewa, San Ildefonso, San Juan, Santa Clara
+9050		Towa
+		Other Indian languages:
+9100		Wiyot
+9101		Yurok
+9110		Kwakiutl
+9111		Nootka
+9112		Makah
+9120		Kutenai
+9130		Haida
+9131		Tlingit, Chilkat, Sitka, Tongass, Yakutat
+9140		Tonkawa
+9150		Yuchi
+9160		Chetemacha
+9170		Yuki
+9171		Wappo
+9200		Misumalpan
+9210		Mayan languages
+9220		Tarascan
+9230		Mapuche
+9240		Oto-Manguen
+9250		Quechua
+9260		Aymara
+9270		Arawakian
+9280		Chibchan
+9290		Tupi-Guarani
+9300		American Indian, n.s.
+9400		Native
+9410		Other specified American Indian languages
+9420		South/Central American Indian
+9500		No language
+9600		Other or not reported
+9601		Other n.e.c.
+9602		Other n.s.
+9999		
+
+ EDUC		Educational attainment [general version]
+00		N/A or no schooling
+01		Nursery school to grade 4
+02		Grade 5, 6, 7, or 8
+03		Grade 9
+04		Grade 10
+05		Grade 11
+06		Grade 12
+07		1 year of college
+08		2 years of college
+09		3 years of college
+10		4 years of college
+11		5+ years of college
+
+ EDUCD		Educational attainment [detailed version]
+000		N/A or no schooling
+001		N/A
+002		No schooling completed
+010		Nursery school to grade 4
+011		Nursery school, preschool
+012		Kindergarten
+013		Grade 1, 2, 3, or 4
+014		Grade 1
+015		Grade 2
+016		Grade 3
+017		Grade 4
+020		Grade 5, 6, 7, or 8
+021		Grade 5 or 6
+022		Grade 5
+023		Grade 6
+024		Grade 7 or 8
+025		Grade 7
+026		Grade 8
+030		Grade 9
+040		Grade 10
+050		Grade 11
+060		Grade 12
+061		12th grade, no diploma
+062		High school graduate or GED
+063		Regular high school diploma
+064		GED or alternative credential
+065		Some college, but less than 1 year
+070		1 year of college
+071		1 or more years of college credit, no degree
+080		2 years of college
+081		Associate's degree, type not specified
+082		Associate's degree, occupational program
+083		Associate's degree, academic program
+090		3 years of college
+100		4 years of college
+101		Bachelor's degree
+110		5+ years of college
+111		6 years of college (6+ in 1960-1970)
+112		7 years of college
+113		8+ years of college
+114		Master's degree
+115		Professional degree beyond a bachelor's degree
+116		Doctoral degree
+999		Missing
+
+ SCHLTYPE		Public or private school
+0		N/A
+1		Not enrolled
+2		Public school
+3		Private school (1960,1990-2000,ACS,PRCS)
+4		Church-related (1980)
+5		Parochial (1970)
+6		Other private, 1980
+7		Other private, 1970
+
+ EMPSTAT		Employment status [general version]
+0		N/A
+1		Employed
+2		Unemployed
+3		Not in labor force
+
+ EMPSTATD		Employment status [detailed version]
+00		N/A
+		In Labor Force
+		Employed
+10		At work
+11		At work, public emerg
+12		Has job, not working
+13		Armed forces
+14		Armed forces--at work
+15		Armed forces--not at work but with job
+20		Unemployed
+21		Unemp, exper worker
+22		Unemp, new worker
+30		Not in Labor Force
+31		NILF, housework
+32		NILF, unable to work
+33		NILF, school
+34		NILF, other
+
+ LABFORCE		Labor force status
+0		N/A
+1		No, not in the labor force
+2		Yes, in the labor force
+
+ MIGRATE1		Migration status, 1 year [general version]
+0		N/A
+1		Same house
+2		Moved within state
+3		Moved between states
+4		Abroad one year ago
+9		Unknown
+
+ MIGRATE1D		Migration status, 1 year [detailed version]
+00		N/A
+10		Same house
+		Different house:
+20		Same state (migration status within state unknown)
+21		Different house, moved within county
+22		Different house, moved within state, between counties
+23		Different house, moved within state, within PUMA
+24		Different house, moved within state, between PUMAs
+25		Different house, unknown within state
+30		Different state (general)
+31		Moved between contigious states
+32		Moved between non-contiguous states
+40		Abroad one year ago
+90		Unknown
+
+ MIGPLAC1		State or country of residence 1 year ago
+000		N/A
+001		Alabama
+002		Alaska
+004		Arizona
+005		Arkansas
+006		California
+008		Colorado
+009		Connecticut
+010		Delaware
+011		District of Columbia
+012		Florida
+013		Georgia
+015		Hawaii
+016		Idaho
+017		Illinois
+018		Indiana
+019		Iowa
+020		Kansas
+021		Kentucky
+022		Louisiana
+023		Maine
+024		Maryland
+025		Massachusetts
+026		Michigan
+027		Minnesota
+028		Mississippi
+029		Missouri
+030		Montana
+031		Nebraska
+032		Nevada
+033		New Hampshire
+034		New Jersey
+035		New Mexico
+036		New York
+037		North Carolina
+038		North Dakota
+039		Ohio
+040		Oklahoma
+041		Oregon
+042		Pennsylvania
+044		Rhode Island
+045		South Carolina
+046		South Dakota
+047		Tennessee
+048		Texas
+049		Utah
+050		Vermont
+051		Virginia
+053		Washington
+054		West Virginia
+055		Wisconsin
+056		Wyoming
+099		United States, ns
+100		Samoa, 1950
+105		Guam
+110		Puerto Rico
+115		Virgin Islands
+120		Other US Possessions
+150		Canada
+151		English Canada
+152		French Canada
+160		Atlantic Islands
+200		Mexico
+211		Belize/British Honduras
+212		Costa Rica
+213		El Salvador
+214		Guatemala
+215		Honduras
+216		Nicaragua
+217		Panama
+218		Canal Zone
+219		Central America, nec
+250		Cuba
+261		Dominican Republic
+262		Haita
+263		Jamaica
+264		British West Indies
+267		Other West Indies
+290		Other Caribbean and North America
+305		Argentina
+310		Bolivia
+315		Brazil
+320		Chile
+325		Colombia
+330		Ecuador
+345		Paraguay
+350		Peru
+360		Uruguay
+365		Venezuela
+390		South America, nec
+400		Denmark
+401		Finland
+402		Iceland
+404		Norway
+405		Sweden
+410		England
+411		Scotland
+412		Wales
+413		United Kingdom (excluding England: 2005ACS)
+414		Ireland
+415		Northern Ireland
+419		Other Northern Europe
+420		Belgium
+421		France
+422		Luxembourg
+425		Netherlands
+426		Switzerland
+429		Other Western Europe
+430		Albania
+433		Greece
+434		Dodecanese Islands
+435		Italy
+436		Portugal
+437		Azores
+438		Spain
+450		Austria
+451		Bulgaria
+452		Czechoslovakia
+453		Germany
+454		Hungary
+455		Poland
+456		Romania
+457		Yugoslavia
+458		Bosnia and Herzegovinia
+459		Other Eastern Europe
+460		Estonia
+461		Latvia
+462		Lithuania
+463		Other Northern or Eastern Europe
+465		USSR
+498		Ukraine
+499		Europe, ns
+500		China
+501		Japan
+502		Korea
+503		Taiwan
+515		Philippines
+517		Thailand
+518		Vietnam
+519		Other South East Asia
+520		Nepal
+521		India
+522		Iran
+523		Iraq
+525		Pakistan
+534		Israel/Palestine
+535		Jordan
+537		Lebanon
+540		Saudi Arabia
+541		Syria
+542		Turkey
+543		Afghanistan
+551		Other Western Asia
+599		Asia, nec
+600		Africa
+610		Northern Africa
+611		Egypt
+619		Nigeria
+620		Western Africa
+621		Eastern Africa
+694		South Africa (Union of)
+699		Africa, nec
+701		Australia
+702		New Zealand
+710		Pacific Islands (Australia and New Zealand Subregions, not specified, Oceania and at Sea: ACS)
+900		Abroad (unknown) or at sea
+997		Unknown value
+999		Missing
+
+ DIFFPHYS		Ambulatory difficulty
+0		N/A
+1		No ambulatory difficulty
+2		Has ambulatory difficulty
+
+ PWSTATE2		Place of work: state, 1980 onward
+00		N/A
+01		Alabama
+02		Alaska
+04		Arizona
+05		Arkansas
+06		California
+08		Colorado
+09		Connecticut
+10		Delaware
+11		District of Columbia
+12		Florida
+13		Georgia
+15		Hawaii
+16		Idaho
+17		Illinois
+18		Indiana
+19		Iowa
+20		Kansas
+21		Kentucky
+22		Louisiana
+23		Maine
+24		Maryland
+25		Massachusetts
+26		Michigan
+27		Minnesota
+28		Mississippi
+29		Missouri
+30		Montana
+31		Nebraska
+32		Nevada
+33		New Hampshire
+34		New Jersey
+35		New Mexico
+36		New York
+37		North Carolina
+38		North Dakota
+39		Ohio
+40		Oklahoma
+41		Oregon
+42		Pennsylvania
+44		Rhode Island
+45		South Carolina
+46		South Dakota
+47		Tennessee
+48		Texas
+49		Utah
+50		Vermont
+51		Virginia
+53		Washington
+54		West Virginia
+55		Wisconsin
+56		Wyoming
+		State group codes (UR samples)
+61		Maine-New Hamp-Vermont
+62		Massachusetts-Rhode Island
+63		Minn-Iowa-Missouri-Kansas-S Dakota-N Dakota
+64		Mayrland-Delaware
+65		Montana-Idaho-Wyoming
+66		Utah-Nevada
+67		Arizona-New Mexico
+68		Alaska-Hawaii
+72		Puerto Rico
+73		U.S. outlying area
+74		United States (1980 Puerto Rico samples)
+80		Abroad
+81		Europe
+82		Eastern Asia
+83		South Central, South East, and Western Asia
+84		Mexico
+85		Other Americas
+86		Other, nec
+87		Iraq
+88		Canada
+90		Confidential
+99		Not reported
+
+ TRANWORK		Means of transportation to work
+00		N/A 
+		Private motorized vehicle:
+10		Auto, truck, or van
+11		Auto
+12		Driver
+13		Passenger
+14		Truck
+15		Van
+20		Motorcycle
+		Public transport:
+30		Bus or streetcar
+31		Bus or trolley bus
+32		Streetcar or trolley car
+33		Subway or elevated
+34		Railroad
+35		Taxicab
+36		Ferryboat
+40		Bicycle
+50		Walked only
+60		Other
+70		Worked at home

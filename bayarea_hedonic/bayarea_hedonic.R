@@ -1,4 +1,6 @@
-redfin_raw = read.csv("redfin_03feb14.csv", header = TRUE)
+#redfin_raw = read.csv("redfin_03feb14.csv", header = TRUE)
+redfin_raw = read.csv("./data/recent_housingsales_rf_1314_taz.csv", header = TRUE)
+rastersamp = read.csv("./data/rastersamp10.txt", header = TRUE)
 inflation = read.csv("inflation_cycle_adjust.csv", header = TRUE)
 ls10_mandatory = read.csv("./data/2010_05_XXX/mandatoryAccessibilities.csv", header = TRUE)
 ls10_nonmandatory = read.csv("./data/2010_05_XXX/nonMandatoryAccessibilities.csv", header = TRUE)
@@ -8,9 +10,12 @@ ls00_mandatory = read.csv("./data/2000_05_XXX/mandatoryAccessibilities.csv", hea
 ls00_nonmandatory = read.csv("./data/2000_05_XXX/nonMandatoryAccessibilities.csv", header = TRUE)
 
 
-redfin_sub <- subset(redfin_raw, Saleyear > 2012 & YearBuilt > 0 & Sqft > 0, select = c(LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds))
+redfin_sub <- subset(redfin_raw, Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0, select = c(LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, taz_key, OBJECTID))
+raster_sub <- subset(rastersamp, NC10_901 > 0, select = c(HOUSING_SALES_RE, NC10_901, CNICEVEG_1KM, COASTDIS, HUD2K1, LYONSTEPSDIS, MAJRDDIS, MEDINC2K_K1, OPEN10KM, OPEN1KM, OPEN2POINT5KM, OPEN500M, OPEN5KM, STATIONDIS, VIEW_WSW1))
 infl <- subset(inflation, saleyear > 1990)
-homes <- merge (x = redfin_sub, y = infl, by.x = "Saleyear", by.y = "saleyear") 
+homes <- merge (x = redfin_sub, y = raster_sub, by.x = "OBJECTID", by.y = "HOUSING_SALES_RE") 
+#homes <- merge (x = homes_a, y = ls10_mandatory, by.x = "taz_key", by.y = "taz") 
+#homes <- merge (x = redfin_sub, y = infl, by.x = "Saleyear", by.y = "saleyear") 
 
 
 
@@ -24,8 +29,8 @@ homes <- merge (x = redfin_sub, y = infl, by.x = "Saleyear", by.y = "saleyear")
 #}
 
 
-homes$price_cpi <- homes$LastSalePr * homes$adjcpi2010 /100000
-homes$price_hpi <- homes$LastSalePr * homes$adjHPIsfrsmt /100000
+#homes$price_cpi <- homes$LastSalePr * homes$adjcpi2010 /100000
+#homes$price_hpi <- homes$LastSalePr * homes$adjHPIsfrsmt /100000
 
 homes$price <- homes$LastSalePr / 100000
 homes$juriscat <- ifelse(homes$City == "San Francisco", c("SF"), c("Not SF")) 
@@ -63,6 +68,9 @@ homes$agecat[YearBuilt < 1945] <- "Historic"
 homes$agecat[YearBuilt >= 1945 & YearBuilt < 2008] <- "PostWar"
 detach(homes)
 
+pacheights <- as.numeric(homes$LYONSTEPDIS < 2000)
+
+
 #attach(homes)
 #homes$juriscat[City = "San Francisco"] <- "SF"
 #homes$juriscat[City != "San Francisco"] <- "Not SF"
@@ -76,7 +84,7 @@ hed1 <- lm(price ~ Sqft + agecat + juriscat
 summary(hed1)
 
 
-hed1 <- lm(price ~ Sqft + agecat + juriscat, data=homes)
+hed1 <- lm(price ~ Sqft + agecat + pacheights + COASTDIS + HUD2K1 + OPEN5KM  + MAJRDDIS + MEDINC2K_K1 , data=homes)
 summary(hed1)
 
 hed_cpi <- lm(price_api ~ Sqft + agecat + juriscat, data=homes)

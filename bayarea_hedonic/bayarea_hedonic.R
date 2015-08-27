@@ -9,6 +9,9 @@ ls05_nonmandatory = read.csv("./data/2005_05_XXX/nonMandatoryAccessibilities.csv
 ls00_mandatory = read.csv("./data/2000_05_XXX/mandatoryAccessibilities.csv", header = TRUE)
 ls00_nonmandatory = read.csv("./data/2000_05_XXX/nonMandatoryAccessibilities.csv", header = TRUE)
 
+# (logsum_value - thatColumnMinLogsumValue) / in-vehicle time coef
+# 0.0134 mandatory in-vehicle time coef
+# 0.0175 non-mandatory in-vehicle time coef
 
 redfin_sub <- subset(redfin_raw, Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0, select = c(LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, taz_key, OBJECTID))
 raster_sub <- subset(rastersamp, NC10_901 > 0, select = c(HOUSING_SALES_RE, NC10_901, CNICEVEG_1KM, COASTDIS, HUD2K1, LYONSTEPSDIS, MAJRDDIS, MEDINC2K_K1, OPEN10KM, OPEN1KM, OPEN2POINT5KM, OPEN500M, OPEN5KM, STATIONDIS, VIEW_WSW1))

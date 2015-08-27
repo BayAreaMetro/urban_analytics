@@ -1,0 +1,13 @@
+autoSuff,autoSuff_label,incQ,incQ_label,households
+0,Zero automobiles,1,Less than $30k,166753
+0,Zero automobiles,2,$30k to $60k,43831
+0,Zero automobiles,3,$60k to $100k,25626
+0,Zero automobiles,4,More than $100k,19033
+1,Automobiles < workers,1,Less than $30k,13180
+1,Automobiles < workers,2,$30k to $60k,34850
+1,Automobiles < workers,3,$60k to $100k,53971
+1,Automobiles < workers,4,More than $100k,69775
+2,Automobiles >= workers,1,Less than $30k,577952
+2,Automobiles >= workers,2,$30k to $60k,557563
+2,Automobiles >= workers,3,$60k to $100k,569668
+2,Automobiles >= workers,4,More than $100k,600520

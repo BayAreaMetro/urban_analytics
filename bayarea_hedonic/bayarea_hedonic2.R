@@ -10,14 +10,14 @@ ls10_mandatory = read.csv("./data/mandatoryAccessibilities10.txt", header = TRUE
 ls10_nonMandatory = read.csv("./data/nonMandatoryAccessibilities10.txt", header = TRUE)
 #ls05_mandatory = read.csv("./data/2005_05_XXX/mandatoryAccessibilities.csv", header = TRUE)
 #ls05_nonmandatory = read.csv("./data/2005_05_XXX/nonMandatoryAccessibilities.csv", header = TRUE)
-#ls00_mandatory = read.csv("./data/2000_05_XXX/mandatoryAccessibilities.csv", header = TRUE)
-#ls00_nonmandatory = read.csv("./data/2000_05_XXX/nonMandatoryAccessibilities.csv", header = TRUE)
+ls00_mandatory = read.csv("./data/2000_05_XXX/mandatoryAccessibilities.csv", header = TRUE)
+ls00_nonMandatory = read.csv("./data/2000_05_XXX/nonMandatoryAccessibilities.csv", header = TRUE)
 
 # (logsum_value - thatColumnMinLogsumValue) / in-vehicle time coef
 # 0.0134 mandatory in-vehicle time coef
 # 0.0175 non-mandatory in-vehicle time coef
 
-market_segs$proportion <- market_segs$households / 2732722
+#market_segs$proportion <- market_segs$households / 2732722
 
 ls10_mandatory$lowInc_0_autos_t <- (ls10_mandatory$lowInc_0_autos - min(ls10_mandatory$lowInc_0_autos)) / 0.0134
 ls10_mandatory$lowInc_autos_lt_workers_t <- (ls10_mandatory$lowInc_autos_lt_workers - min(ls10_mandatory$lowInc_autos_lt_workers)) / 0.0134
@@ -48,6 +48,61 @@ ls10_nonMandatory$veryHighInc_autos_lt_workers_tn <- (ls10_nonMandatory$veryHigh
 ls10_nonMandatory$veryHighInc_autos_ge_workers_tn <- (ls10_nonMandatory$veryHighInc_autos_ge_workers - min(ls10_nonMandatory$veryHighInc_autos_ge_workers)) / 0.0134
 
 ls10_nonMandatory$nwt <- 0.061 * ls10_nonMandatory$lowInc_0_autos_tn + 0.005 * ls10_nonMandatory$lowInc_autos_lt_workers_tn + 0.211 * ls10_nonMandatory$lowInc_autos_ge_workers_tn + 0.016 * ls10_nonMandatory$medInc_0_autos_tn + 0.013 * ls10_nonMandatory$medInc_autos_lt_workers_tn + 0.204 * ls10_nonMandatory$medInc_autos_ge_workers_tn + 0.009 * ls10_nonMandatory$highInc_0_autos_tn + 0.020 * ls10_nonMandatory$highInc_autos_lt_workers_tn + 0.208 * ls10_nonMandatory$highInc_autos_ge_workers_tn + 0.007 * ls10_nonMandatory$veryHighInc_0_autos_tn + 0.026 * ls10_nonMandatory$veryHighInc_autos_lt_workers_tn + 0.220 * ls10_nonMandatory$veryHighInc_autos_ge_workers_tn 
+
+# ls00
+
+ls00_mandatory$lowInc_0_autos_t <- (ls00_mandatory$lowInc_0_autos - min(ls00_mandatory$lowInc_0_autos)) / 0.0134
+ls00_mandatory$lowInc_autos_lt_workers_t <- (ls00_mandatory$lowInc_autos_lt_workers - min(ls00_mandatory$lowInc_autos_lt_workers)) / 0.0134
+ls00_mandatory$lowInc_autos_ge_workers_t <- (ls00_mandatory$lowInc_autos_ge_workers - min(ls00_mandatory$lowInc_autos_ge_workers)) / 0.0134
+ls00_mandatory$medInc_0_autos_t <- (ls00_mandatory$medInc_0_autos - min(ls00_mandatory$medInc_0_autos)) / 0.0134
+ls00_mandatory$medInc_autos_lt_workers_t <- (ls00_mandatory$medInc_autos_lt_workers - min(ls00_mandatory$medInc_autos_lt_workers)) / 0.0134
+ls00_mandatory$medInc_autos_ge_workers_t <- (ls00_mandatory$medInc_autos_ge_workers - min(ls00_mandatory$medInc_autos_ge_workers)) / 0.0134
+ls00_mandatory$highInc_0_autos_t <- (ls00_mandatory$highInc_0_autos - min(ls00_mandatory$highInc_0_autos)) / 0.0134
+ls00_mandatory$highInc_autos_lt_workers_t <- (ls00_mandatory$highInc_autos_lt_workers - min(ls00_mandatory$highInc_autos_lt_workers)) / 0.0134
+ls00_mandatory$highInc_autos_ge_workers_t <- (ls00_mandatory$highInc_autos_ge_workers - min(ls00_mandatory$highInc_autos_ge_workers)) / 0.0134
+ls00_mandatory$veryHighInc_0_autos_t <- (ls00_mandatory$veryHighInc_0_autos - min(ls00_mandatory$veryHighInc_0_autos)) / 0.0134
+ls00_mandatory$veryHighInc_autos_lt_workers_t <- (ls00_mandatory$veryHighInc_autos_lt_workers - min(ls00_mandatory$veryHighInc_autos_lt_workers)) / 0.0134
+ls00_mandatory$veryHighInc_autos_ge_workers_t <- (ls00_mandatory$veryHighInc_autos_ge_workers - min(ls00_mandatory$veryHighInc_autos_ge_workers)) / 0.0134
+
+ls00_mandatory$mwt <- 0.061 * ls00_mandatory$lowInc_0_autos_t + 0.005 * ls00_mandatory$lowInc_autos_lt_workers_t + 0.211 * ls00_mandatory$lowInc_autos_ge_workers_t + 0.016 * ls00_mandatory$medInc_0_autos_t + 0.013 * ls00_mandatory$medInc_autos_lt_workers_t + 0.204 * ls00_mandatory$medInc_autos_ge_workers_t + 0.009 * ls00_mandatory$highInc_0_autos_t + 0.020 * ls00_mandatory$highInc_autos_lt_workers_t + 0.208 * ls00_mandatory$highInc_autos_ge_workers_t + 0.007 * ls00_mandatory$veryHighInc_0_autos_t + 0.026 * ls00_mandatory$veryHighInc_autos_lt_workers_t + 0.220 * ls00_mandatory$veryHighInc_autos_ge_workers_t 
+
+ls00_nonMandatory$lowInc_0_autos_tn <- (ls00_nonMandatory$lowInc_0_autos - min(ls00_nonMandatory$lowInc_0_autos)) / 0.0134
+ls00_nonMandatory$lowInc_autos_lt_workers_tn <- (ls00_nonMandatory$lowInc_autos_lt_workers - min(ls00_nonMandatory$lowInc_autos_lt_workers)) / 0.0134
+ls00_nonMandatory$lowInc_autos_ge_workers_tn <- (ls00_nonMandatory$lowInc_autos_ge_workers - min(ls00_nonMandatory$lowInc_autos_ge_workers)) / 0.0134
+ls00_nonMandatory$medInc_0_autos_tn <- (ls00_nonMandatory$medInc_0_autos - min(ls00_nonMandatory$medInc_0_autos)) / 0.0134
+ls00_nonMandatory$medInc_autos_lt_workers_tn <- (ls00_nonMandatory$medInc_autos_lt_workers - min(ls00_nonMandatory$medInc_autos_lt_workers)) / 0.0134
+ls00_nonMandatory$medInc_autos_ge_workers_tn <- (ls00_nonMandatory$medInc_autos_ge_workers - min(ls00_nonMandatory$medInc_autos_ge_workers)) / 0.0134
+ls00_nonMandatory$highInc_0_autos_tn <- (ls00_nonMandatory$highInc_0_autos - min(ls00_nonMandatory$highInc_0_autos)) / 0.0134
+ls00_nonMandatory$highInc_autos_lt_workers_tn <- (ls00_nonMandatory$highInc_autos_lt_workers - min(ls00_nonMandatory$highInc_autos_lt_workers)) / 0.0134
+ls00_nonMandatory$highInc_autos_ge_workers_tn <- (ls00_nonMandatory$highInc_autos_ge_workers - min(ls00_nonMandatory$highInc_autos_ge_workers)) / 0.0134
+ls00_nonMandatory$veryHighInc_0_autos_tn <- (ls00_nonMandatory$veryHighInc_0_autos - min(ls00_nonMandatory$veryHighInc_0_autos)) / 0.0134
+ls00_nonMandatory$veryHighInc_autos_lt_workers_tn <- (ls00_nonMandatory$veryHighInc_autos_lt_workers - min(ls00_nonMandatory$veryHighInc_autos_lt_workers)) / 0.0134
+ls00_nonMandatory$veryHighInc_autos_ge_workers_tn <- (ls00_nonMandatory$veryHighInc_autos_ge_workers - min(ls00_nonMandatory$veryHighInc_autos_ge_workers)) / 0.0134
+
+ls00_nonMandatory$nwt <- 0.061 * ls00_nonMandatory$lowInc_0_autos_tn + 0.005 * ls00_nonMandatory$lowInc_autos_lt_workers_tn + 0.211 * ls00_nonMandatory$lowInc_autos_ge_workers_tn + 0.016 * ls00_nonMandatory$medInc_0_autos_tn + 0.013 * ls00_nonMandatory$medInc_autos_lt_workers_tn + 0.204 * ls00_nonMandatory$medInc_autos_ge_workers_tn + 0.009 * ls00_nonMandatory$highInc_0_autos_tn + 0.020 * ls00_nonMandatory$highInc_autos_lt_workers_tn + 0.208 * ls00_nonMandatory$highInc_autos_ge_workers_tn + 0.007 * ls00_nonMandatory$veryHighInc_0_autos_tn + 0.026 * ls00_nonMandatory$veryHighInc_autos_lt_workers_tn + 0.220 * ls00_nonMandatory$veryHighInc_autos_ge_workers_tn 
+
+
+subzone_to_string <- function(x)
+{
+  y <- rep.int(NA, length(x))
+  y[x == "0"] <- "c"
+  y[x == "1"] <- "a"
+  y[x == "2"] <- "b"
+  y
+}
+
+ls00_mandatory$subzone_s <- subzone_to_string(ls00_mandatory$subzone)
+
+
+ls00_mandatory$taz_sub <- paste(ls00_mandatory$taz, ls00_mandatory$subzone_s, sep="")
+
+
+
+ls1000_mandatory <- merge (x = ls10_mandatory, y = ls00_mandatory, by = "taz_sub") 
+
+ls1000_mandatory$mdiff <- ls10_mandatory$mwt - ls00_mandatory$mwt
+
+
 
 summary(rf_raw)
 rf_raw$lot <- rf_raw$LotSize / 1
@@ -97,6 +152,8 @@ homes$agecat[YearBuilt < 1945] <- "Historic"
 homes$agecat[YearBuilt >= 1945 & YearBuilt < 2008] <- "PostWar"
 detach(homes)
 
+homes$lyon <- cut(homes$LYONSTEPSDIS, c(0,2500))
+summary(homes)
 
 #attach(homes)
 #homes$juriscat[City = "San Francisco"] <- "SF"
@@ -111,7 +168,7 @@ summary(homes_c)
 cor(homes_c$mwt, homes_c$nwt)
 
 
-hed1 <- lm(LastSalePr ~ Sqft + Beds + Baths + agecat + mwt   + HUD2K1 + MEDINC2K_K1 + OCEANVIEW + v_rate + p_rate , data=homes_c)
+hed1 <- lm(LastSalePr ~ Sqft + Beds + Baths + agecat + mwt + lyon  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW + v_rate + p_rate , data=homes_c)
 summary(hed1)
 
 #hed1 <- lm(logprpersqft ~ Sqft + agecat + mwt + nwt  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW , data=homes_c)

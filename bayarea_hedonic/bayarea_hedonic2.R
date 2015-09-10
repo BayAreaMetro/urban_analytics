@@ -1,13 +1,13 @@
-rf_raw = read.csv("./data/recent_housingsales_rf_1314_tazsub.csv", header = TRUE)
-rstr_raw = read.csv("./data/rastersamp12.txt", header = TRUE)
+rf_raw = read.csv("./data/recent_housingsales_rf_1314_tazsubschool.csv", header = TRUE)
+rstr_raw = read.csv("./data/raster_on_rf_recent.csv", header = TRUE)
 market_segs = read.csv("./data/accessibility-market-segments.csv", header = TRUE)
 crime = read.csv("./data/crimerates.csv", header = TRUE)
-
+api10 = read.csv("./data/api10bdb_c.csv", header = TRUE)
 
 #inflation = read.csv("inflation_cycle_adjust.csv", header = TRUE)
 
-ls10_mandatory = read.csv("./data/mandatoryAccessibilities10.txt", header = TRUE)
-ls10_nonMandatory = read.csv("./data/nonMandatoryAccessibilities10.txt", header = TRUE)
+ls10_mandatory = read.csv("./data/2010_05_XXX/mandatoryAccessibilities.csv", header = TRUE)
+ls10_nonMandatory = read.csv("./data/2010_05_XXX/nonMandatoryAccessibilities.csv", header = TRUE)
 #ls05_mandatory = read.csv("./data/2005_05_XXX/mandatoryAccessibilities.csv", header = TRUE)
 #ls05_nonmandatory = read.csv("./data/2005_05_XXX/nonMandatoryAccessibilities.csv", header = TRUE)
 ls00_mandatory = read.csv("./data/2000_05_XXX/mandatoryAccessibilities.csv", header = TRUE)
@@ -91,11 +91,11 @@ subzone_to_string <- function(x)
   y
 }
 
+ls10_mandatory$subzone_s <- subzone_to_string(ls10_mandatory$subzone)
+ls10_mandatory$taz_sub <- paste(ls00_mandatory$taz, ls10_mandatory$subzone_s, sep="")
+
 ls00_mandatory$subzone_s <- subzone_to_string(ls00_mandatory$subzone)
-
-
 ls00_mandatory$taz_sub <- paste(ls00_mandatory$taz, ls00_mandatory$subzone_s, sep="")
-
 
 
 ls1000_mandatory <- merge (x = ls10_mandatory, y = ls00_mandatory, by = "taz_sub") 
@@ -109,19 +109,22 @@ rf_raw$lot <- rf_raw$LotSize / 1
 
 levels(rf_raw$HomeType)
 
-rf_c <- subset(rf_raw, Baths > 0 &Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0, select = c(HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, Latitude, Longitude, OBJECTID))
+rf_c <- subset(rf_raw, Baths > 0 &Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0, select = c(HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, name, Latitude, Longitude, OBJECTID))
 
 
 #rf_c <- subset(rf_raw, HomeType = c("Condo/Coop") &Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0, select = c(HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, Latitude, Longitude, OBJECTID))
-rf_c <- subset(rf_raw, HomeType = c("Condo/Coop", "Single Family Residential", "Townhouse") & LotSize > 0 & Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0 & LotSize > 0 , select = c(HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, Latitude, Longitude, OBJECTID))
-rstr_c <- subset(rstr_raw, NC10_901 > 0, select = c(HOUSING_SALES_RE, NC10_901, COASTDIS, HUD2K1, HUD2K_5KMISH, LYONSTEPSDIS, MAJRDDIS, KMTOPA, MEDINC2K_K1, OCEANVIEW, OPEN10KM, OPEN1KM, OPEN2POINT5KM, OPEN500M, OPEN5KM, STATIONDIS, BARTDIS, VIEW_WSW1))
+rf_c <- subset(rf_raw, HomeType = c("Condo/Coop", "Single Family Residential", "Townhouse") & LotSize > 0 & Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0 & LotSize > 0 , select = c(Url, HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, name, Latitude, Longitude, OBJECTID))
+rstr_c <- subset(rstr_raw, NC10_901 > 0, select = c(Url, HOUSING_SALES_RE, NC10_901, COASTDIS, HUD2K1, HUD2K_5KMISH, LYONSTEPSDIS, MAJRDDIS, KMTOPA, MEDINC2K_K1, OCEANVIEW, OPEN10KM, OPEN1KM, OPEN2POINT5KM, OPEN500M, OPEN5KM, STATIONDIS, BARTDIS, VIEW_WSW1))
 #infl <- subset(inflation, saleyear > 1990)
+api10_c <- subset(api10, RTYPE == "D")
 
-homes_raster <- merge (x = rf_c, y = rstr_c, by.x = "OBJECTID", by.y = "HOUSING_SALES_RE") 
-homes_a <- merge (x = homes_raster, y = crime, by.x = "City", by.y = "City") 
+# try out dplyr for joins
 
-homes_b <- merge (x = homes_a, y = ls10_mandatory, by.x = "taz_sub", by.y = "taz_sub", all.x = TRUE) 
-homes <- merge (x = homes_b, y = ls10_nonMandatory, by.x = "taz_sub", by.y = "taz_sub", all.x = TRUE) 
+homes_raster <- merge (x = rf_c, y = rstr_c, by.x = "Url", by.y = "Url") 
+homes_crime <- merge (x = homes_raster, y = crime, by.x = "City", by.y = "City") 
+homes_ls <- merge (x = homes_crime, y = ls1000_mandatory, by.x = "taz_sub", by.y = "taz_sub")
+homes <- merge (x = homes_ls, y = api10_c, by.x = "name", by.y = "DNAME")
+
 
 #homes <- merge (x = redfin_sub, y = infl, by.x = "Saleyear", by.y = "saleyear") 
 
@@ -160,15 +163,17 @@ summary(homes)
 #homes$juriscat[City != "San Francisco"] <- "Not SF"
 #detach(homes)
 
-homes_c <- subset(homes, logprpersqft > 0)
-homes_c$mwtnwt = homes_c$mwt * homes_c$nwt
+homes_c <- subset(homes, logprpersqft > 0 , select = c(LastSalePr, Sqft, Beds, Baths, YearBuilt, mwt.x, HUD2K1, MEDINC2K_K1, OCEANVIEW, API, c_rate))
 
-summary(homes_c)
+cor(na.omit(homes_c))
 
-cor(homes_c$mwt, homes_c$nwt)
+cor(homes_c$Sqft, homes_c$Beds)
 
+summary(homes_c$Baths)
 
-hed1 <- lm(LastSalePr ~ Sqft + Beds + Baths + agecat + mwt + lyon  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW + v_rate + p_rate , data=homes_c)
+ivs <- c(homes_c$Sqft + homes_c$Beds + homes_c$Baths + homes_c$agecat + homes_c$mwt.x  + homes_c$HUD2K1 + homes_c$MEDINC2K_K1 + homes_c$OCEANVIEW + homes_c$API + homes_c$c_rate) 
+
+hed1 <- lm(LastSalePr ~ Sqft + Beds + Baths + agecat + mwt.x  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW + API + c_rate , data=homes_c)
 summary(hed1)
 
 #hed1 <- lm(logprpersqft ~ Sqft + agecat + mwt + nwt  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW , data=homes_c)

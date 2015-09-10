@@ -102,7 +102,7 @@ ls1000_mandatory <- merge (x = ls10_mandatory, y = ls00_mandatory, by = "taz_sub
 
 ls1000_mandatory$mdiff <- ls10_mandatory$mwt - ls00_mandatory$mwt
 
-
+sum(ls1000_mandatory$mdiff)
 
 summary(rf_raw)
 rf_raw$lot <- rf_raw$LotSize / 1

@@ -102,6 +102,10 @@ ls1000_mandatory <- merge (x = ls10_mandatory, y = ls00_mandatory, by = "taz_sub
 
 ls1000_mandatory$mdiff <- ls10_mandatory$mwt - ls00_mandatory$mwt
 
+
+write.csv(ls1000_mandatory, file = "ls1000_mandatory.csv")
+
+
 sum(ls1000_mandatory$mdiff)
 
 summary(rf_raw)
@@ -109,11 +113,13 @@ rf_raw$lot <- rf_raw$LotSize / 1
 
 levels(rf_raw$HomeType)
 
-rf_c <- subset(rf_raw, Baths > 0 &Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0, select = c(HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, name, Latitude, Longitude, OBJECTID))
+rf_s <- subset(rf_raw, LastSalePr > 50000 & LastSalePr < 10000000 & Baths > 0 &Saleyear > 2012 & YearBuilt > 0 & Sqft > 150 & taz_key > 0, select = c(Url, HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, name, Latitude, Longitude, OBJECTID))
 
 
 #rf_c <- subset(rf_raw, HomeType = c("Condo/Coop") &Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0, select = c(HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, Latitude, Longitude, OBJECTID))
-rf_c <- subset(rf_raw, HomeType = c("Condo/Coop", "Single Family Residential", "Townhouse") & LotSize > 0 & Saleyear > 2012 & YearBuilt > 0 & Sqft > 0 & taz_key > 0 & LotSize > 0 , select = c(Url, HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, name, Latitude, Longitude, OBJECTID))
+rf_c <- subset(rf_s, HomeType == c("Condo/Coop", "Single Family Residential", "Townhouse") , select = c(Url, HomeType, LastSalePr, Saleyear, City, Sqft, YearBuilt, Beds, Baths, LotSize, taz_sub, name, Latitude, Longitude, OBJECTID))
+summary(rf_c)
+
 rstr_c <- subset(rstr_raw, NC10_901 > 0, select = c(Url, HOUSING_SALES_RE, NC10_901, COASTDIS, HUD2K1, HUD2K_5KMISH, LYONSTEPSDIS, MAJRDDIS, KMTOPA, MEDINC2K_K1, OCEANVIEW, OPEN10KM, OPEN1KM, OPEN2POINT5KM, OPEN500M, OPEN5KM, STATIONDIS, BARTDIS, VIEW_WSW1))
 #infl <- subset(inflation, saleyear > 1990)
 api10_c <- subset(api10, RTYPE == "D")
@@ -148,7 +154,7 @@ homes$price <- homes$LastSalePr / 100000
 homes$juriscat <- ifelse(homes$City == "San Francisco", c("SF"), c("Not SF")) 
 #(tmp <- yes; tmp[!test] <- no[!test]; tmp) 
 
-
+detach(homes)
 attach(homes)
 homes$agecat[YearBuilt >= 2008] <- "Recent"
 homes$agecat[YearBuilt < 1945] <- "Historic"
@@ -169,12 +175,18 @@ cor(na.omit(homes_c))
 
 cor(homes_c$Sqft, homes_c$Beds)
 
-summary(homes_c$Baths)
+summary(homes_c)
 
 ivs <- c(homes_c$Sqft + homes_c$Beds + homes_c$Baths + homes_c$agecat + homes_c$mwt.x  + homes_c$HUD2K1 + homes_c$MEDINC2K_K1 + homes_c$OCEANVIEW + homes_c$API + homes_c$c_rate) 
 
-hed1 <- lm(LastSalePr ~ Sqft + Beds + Baths + agecat + mwt.x  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW + API + c_rate , data=homes_c)
+hed1 <- lm(LastSalePr ~ Sqft + Beds + Baths + YearBuilt  + HUD2K1 + MEDINC2K_K1  + API + c_rate + mwt.x , data=homes_c)
 summary(hed1)
+
+
+attach(homes_c)
+library(psych)
+#sd(LastSalePr, Sqft, Beds, Baths, YearBuilt, HUD2K1, MEDINC2K_K1,  OCEANVIEW,  API , c_rate)
+sd(API)
 
 #hed1 <- lm(logprpersqft ~ Sqft + agecat + mwt + nwt  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW , data=homes_c)
 #summary(hed1)

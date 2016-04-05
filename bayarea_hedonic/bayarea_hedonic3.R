@@ -149,17 +149,23 @@ homes <- merge (x = homes_ls, y = api10_c, by.x = "name", by.y = "DNAME")
 #homes$price_cpi <- homes$LastSalePr * homes$adjcpi2010 /100000
 #homes$price_hpi <- homes$LastSalePr * homes$adjHPIsfrsmt /100000
 
+homes$logprice <-  log(homes$LastSalePr)
 homes$logprpersqft <-  log(homes$LastSalePr / homes$Sqft)
 homes$price <- homes$LastSalePr / 100000
 homes$juriscat <- ifelse(homes$City == "San Francisco", c("SF"), c("Not SF")) 
 #(tmp <- yes; tmp[!test] <- no[!test]; tmp) 
 
 #detach(homes)
-attach(homes)
-homes$agecat[YearBuilt >= 2008] <- "Recent"
-homes$agecat[YearBuilt < 1945] <- "Historic"
-homes$agecat[YearBuilt >= 1945 & YearBuilt < 2008] <- "PostWar"
-detach(homes)
+#attach(homes)
+#homes$agecat[YearBuilt >= 2008] <- "Recent"
+#homes$agecat[YearBuilt < 1945] <- "Historic"
+#homes$agecat[YearBuilt >= 1945 & YearBuilt < 2008] <- "PostWar"
+#detach(homes)
+
+homes$agecat <- cut(homes$YearBuilt,
+                     breaks=c(-Inf, 1940, 2010, Inf),
+                     labels=c("old","medium","new"))
+is.factor(homes$agecat)
 
 homes$lyon <- cut(homes$LYONSTEPSDIS, c(0,2500))
 summary(homes)
@@ -169,7 +175,7 @@ summary(homes)
 #homes$juriscat[City != "San Francisco"] <- "Not SF"
 #detach(homes)
 
-homes_c <- subset(homes, logprpersqft > 0 , select = c(LastSalePr, Sqft, Beds, Baths, YearBuilt, mwt.x, HUD2K1, MEDINC2K_K1, OCEANVIEW, API, c_rate))
+homes_c <- subset(homes, logprpersqft > 0 , select = c(LastSalePr, logprice, agecat, Sqft, Beds, Baths, YearBuilt, mwt.x, HUD2K1, MEDINC2K_K1, OCEANVIEW, API, c_rate))
 
 cor(na.omit(homes_c))
 
@@ -179,14 +185,17 @@ summary(homes_c)
 
 ivs <- c(homes_c$Sqft + homes_c$Beds + homes_c$Baths + homes_c$agecat + homes_c$mwt.x  + homes_c$HUD2K1 + homes_c$MEDINC2K_K1 + homes_c$OCEANVIEW + homes_c$API + homes_c$c_rate) 
 
-hed1 <- lm(LastSalePr ~ Sqft + Beds + Baths + YearBuilt  + HUD2K1 + MEDINC2K_K1  + API + c_rate + mwt.x , data=homes_c)
+hed1 <- lm(LastSalePr ~ Sqft + Baths + agecat  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW + API + c_rate + mwt.x , data=homes_c)
 summary(hed1)
+
+hed2 <- lm(logprice ~ Sqft + Baths + agecat  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW  + API + c_rate + mwt.x , data=homes_c)
+summary(hed2)
 
 
 attach(homes_c)
 library(psych)
 #sd(LastSalePr, Sqft, Beds, Baths, YearBuilt, HUD2K1, MEDINC2K_K1,  OCEANVIEW,  API , c_rate)
-sd(API)
+sd(logprice)
 
 #hed1 <- lm(logprpersqft ~ Sqft + agecat + mwt + nwt  + HUD2K1 + MEDINC2K_K1 + OCEANVIEW , data=homes_c)
 #summary(hed1)
